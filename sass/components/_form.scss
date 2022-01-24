@@ -1,0 +1,105 @@
+.bground {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(196, 196, 196, 0.4);
+  z-index: 11;
+
+  .content {
+    margin: auto;
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    min-height: 812px;
+    background: $color-secondary;
+    border-radius: 5px;
+    box-shadow: -5px 10px 30px rgba(0, 0, 0, 0.25);
+
+    @media all and (min-width: $breakpoint-desktop) {
+      padding-bottom: 40px;
+      margin: 1.5% auto;
+    }
+
+    .close {
+      background: url(../img/logo/close-modal.png) center center / 100% 100%;
+      position: absolute;
+      right: 26px;
+      top: 26px;
+      cursor: pointer;
+      height: 19px;
+      width: 19px;
+      border: none;
+
+      @media all and (min-width: $breakpoint-desktop) {
+        height: 35px;
+        width: 35px;
+      }
+    }
+
+    .modal-body {
+      #reserve {
+        padding: 20px 22px 12px 15px;
+
+        .form-text {
+          font-size: 36px;
+          margin-bottom: 15px;
+
+          @media all and (min-width: $breakpoint-desktop) {
+            font-size: 55px;
+          }
+        }
+
+        .formData {
+          max-width: 100%;
+          width: 100%;
+          margin-bottom: 14px;
+
+          label {
+            font-size: 24px;
+
+            @media all and (min-width: $breakpoint-desktop) {
+              font-size: 30px;
+            }
+          }
+
+          .text-control {
+            margin-top: 5px;
+            height: 52px;
+            max-width: 100%;
+            min-width: 100%;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+          }
+
+          .message {
+            height: 184px;
+          }
+        }
+      }
+    }
+
+    .btn-submit {
+      background: $color-primary;
+      display: block;
+      margin: 0 auto;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 18px;
+      width: 170px;
+      height: 35px;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+
+      @media all and (min-width: $breakpoint-desktop) {
+        margin: 0 0 0 4%;
+        height: 59px;
+      }
+    }
+  }
+}

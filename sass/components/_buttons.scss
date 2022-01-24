@@ -1,0 +1,59 @@
+// filters buttons
+
+#medias-tags {
+  button {
+    @include filters-button;
+  }
+}
+
+#tags-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+
+  button {
+    @include filters-button;
+  }
+
+  li {
+    @include filters-button;
+    cursor: default;
+    padding: 0 5px;
+  }
+}
+
+// Contact button on artist's page
+
+#artist {
+  #contact {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $color-primary;
+    color: #fff;
+    padding: 5px 18px 7px 18px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+
+    &:hover,
+    &:focus {
+      background-color: $color-secondary;
+      color: #000;
+    }
+
+    @media all and (min-width: $breakpoint-desktop) {
+      position: absolute;
+      width: 170px;
+      height: 69px;
+      font-size: 20px;
+      padding: 0;
+      bottom: 25%;
+      left: 60%;
+    }
+  }
+}
