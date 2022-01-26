@@ -184,6 +184,7 @@ function likesIncrement(photographerMedias) {
 */
 function sortBy(photographerMedias) {
   const option = document.querySelector("#sort-by").value;
+  //option.style.border-bottom = '1px solid white' //nope
 
   if (option == "popularity") {
       photographerMedias.sort(function(a, b) {
