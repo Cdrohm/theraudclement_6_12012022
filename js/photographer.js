@@ -99,6 +99,7 @@ class ImageMedia {
   }
 
   //getters?
+  //decorater
   createCard() {
       return `
 <article>
@@ -127,6 +128,7 @@ class VideoMedia {
       this.likes = media.likes;
   }
 
+  //decorater
   createCard() {
       return `
 <article>
