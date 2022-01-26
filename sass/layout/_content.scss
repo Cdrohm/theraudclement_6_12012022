@@ -104,6 +104,7 @@
   }
 
   #dropdown {
+    
     @media all and (max-width: $breakpoint-desktop) {
       display: none;
     }
@@ -114,6 +115,7 @@
     }
 
     #sort-by {
+      border-bottom: 10px solid white;
       background-color: $color-primary;
       color: #fff;
       border: none;

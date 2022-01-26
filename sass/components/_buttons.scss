@@ -1,29 +1,4 @@
-// filters buttons
-
-#medias-tags {
-  button {
-    @include filters-button;
-  }
-}
-
-#tags-list {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-
-  button {
-    @include filters-button;
-  }
-
-  li {
-    @include filters-button;
-    cursor: default;
-    padding: 0 5px;
-  }
-}
-
 // Contact button on artist's page
-
 #artist {
   #contact {
     position: fixed;
