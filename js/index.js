@@ -34,6 +34,7 @@ function photographerNodeFactory(photographer, photographers) {
   tagline.id = "tagline";
   const price = document.createElement("p");
   price.id = "price";
+  price.style.margin = "0 0 50px 0"; //margin bottom 
 
   urlPhotographer.href = "./html/photographer" + photographer.id + ".html"; //link to
   profilePicture.src = "./photographersID/" + photographer.portrait; //load img
