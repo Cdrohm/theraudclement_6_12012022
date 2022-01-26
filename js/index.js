@@ -1,12 +1,14 @@
 //Loading content
-import { getPhotographers } from "./api.js";
+import {
+  getPhotographers
+} from "./api.js";
 
 //initiate
 async function init() {
   let photographers = await getPhotographers();
   const content = document.getElementById("main-index");
   photographers.forEach((photographer) =>
-    content.appendChild(photographerNodeFactory(photographer, photographers))
+      content.appendChild(photographerNodeFactory(photographer, photographers))
   );
   generateTags(photographers);
 }
@@ -15,11 +17,11 @@ init();
 
 //Photograph 
 /**
- * 
- * @param {*} photographer 
- * @param {*} photographers 
- * @returns photograph card
- */
+* 
+* @param {*} photographer 
+* @param {*} photographers 
+* @returns photograph card index
+*/
 function photographerNodeFactory(photographer, photographers) {
   const photographerProfile = document.createElement("article");
   photographerProfile.id = "photographer-" + photographer.id;
