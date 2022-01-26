@@ -17,6 +17,7 @@ async function getMedias() {
   return medias;
 }
 
+//Exports
 export {
   getPhotographers
 };
