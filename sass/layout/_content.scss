@@ -114,10 +114,9 @@
       font-size: 18px;
     }
 
-    .option {
-      border-bottom: 10px solid white;
+    select {
+      border-bottom: 1px solid white;
     }
-  
     #sort-by {
      // border-bottom: 10px solid white;
       background-color: $color-primary;
@@ -128,10 +127,6 @@
       border-radius: 5px;
       margin: 9px 0 48px 25px;
       font-size: 18px;
-
-      > * {
-        font-size: 18px;
-      }
     }
   }
 

@@ -455,8 +455,8 @@ body > * {
   font-size: 18px;
 }
 
-#dropdown .option {
-  border-bottom: 10px solid white;
+#dropdown select {
+  border-bottom: 1px solid white;
 }
 
 #dropdown #sort-by {
@@ -467,10 +467,6 @@ body > * {
   width: 170px;
   border-radius: 5px;
   margin: 9px 0 48px 25px;
-  font-size: 18px;
-}
-
-#dropdown #sort-by > * {
   font-size: 18px;
 }
 
