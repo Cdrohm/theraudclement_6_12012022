@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="shortcut icon" href="#">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/style.css" />
     <!--Onglet icon-->
-    <link
-      rel="shortcut icon"
-      href="https://img.icons8.com/ios/50/000000/camera--v3.png"
-    />
+    <link rel="shortcut icon" href="https://img.icons8.com/ios/50/000000/camera--v3.png" />
     <title>FishEye - Photographes</title>
 </head>
 
 
 <body>
 
-    <!--Import photograph + LOGO-->
+    <!--Import photograph (name/portrait/location/tagline) + LOGO-->
     <input type="hidden" id="photographer-id" value="243" />
     <header id="header">
 
         <!--Back home-->
-        <a href ="../index.html">
+        <a href="../index.html">
             <img src="../img/logo/logo.svg" alt="FishEye Home page">
         </a>
     </header>
@@ -36,12 +34,12 @@
         <!--Dropdown menu-->
         <div id="dropdown">
             <label for="sort-by" id="sort-list">Trier par</label>
-                <select name="sort" id="sort-by" aria-label="Order by">
-                    <!--Sort-->
-                    <option value="date">Date</option>
-                    <option value="popularity">Popularité</option>
-                    <option value="title">Titre</option>
-                </select>
+            <select name="sort" id="sort-by" aria-label="Order by">
+                <!--Sort-->
+                <option value="date">Date</option>
+                <option value="popularity">Popularité</option>
+                <option value="title">Titre</option>
+            </select>
         </div>
 
         <!--Box photos-->
@@ -65,28 +63,29 @@
                         </div>
                         <div class="formData">
                             <label for="first">Prénom</label><br />
-                            <input class="text-control" type="text" id="first" name="first" aria-label="First name" placeholder="John" required/><br />
+                            <input class="text-control" type="text" id="first" name="first" aria-label="First name" placeholder="John" required /><br />
                         </div>
                         <div class="formData">
                             <label for="last">Nom</label><br />
-                            <input class="text-control" type="text" id="last" name="last" aria-label="Last name" placeholder="Doe" required/><br />
+                            <input class="text-control" type="text" id="last" name="last" aria-label="Last name" placeholder="Doe" required /><br />
                         </div>
                         <div class="formData">
                             <label for="email">E-mail</label><br />
-                            <input class="text-control" type="email" id="email" name="email" aria-label="Email" placeholder="John.Doe@email.com" required/><br />
+                            <input class="text-control" type="email" id="email" name="email" aria-label="Email" placeholder="John.Doe@email.com" required /><br />
                         </div>
                         <div class="formData">
                             <label for="message">Votre message</label><br />
                             <textarea class="text-control message" id="message" name="message" rows="10" cols="50" aria-label="Your message" placeholder="Votre message" required></textarea>
                         </div>
-                        <input class="btn-submit" type="submit" value="Envoyer" aria-label="Send"/>
+                        <input class="btn-submit" type="submit" value="Envoyer" aria-label="Send" />
                     </form>
                 </div>
             </div>
         </div>
-    </main> 
+    </main>
 
     <!--Way to JS-->
     <script type="module" src="../js/photographer.js"></script>
 </body>
+
 </html>
