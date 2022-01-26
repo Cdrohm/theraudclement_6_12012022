@@ -1,11 +1,3 @@
-// filters buttons
-
-#medias-tags {
-  button {
-    @include filters-button;
-  }
-}
-
 // Contact button on artist's page
 #artist {
   #contact {
