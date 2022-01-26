@@ -98,6 +98,7 @@ class ImageMedia {
       this.likes = media.likes;
   }
 
+  //getters?
   createCard() {
       return `
 <article>
