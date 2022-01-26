@@ -20,7 +20,7 @@ init();
 * 
 * @param {*} photographer 
 * @param {*} photographers 
-* @returns photograph card index
+* @returns create photograph card index
 */
 function photographerNodeFactory(photographer, photographers) {
   const photographerProfile = document.createElement("article");
