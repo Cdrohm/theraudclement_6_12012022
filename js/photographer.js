@@ -117,7 +117,7 @@ class ImageMedia {
   }
 }
 
-//video
+//video constructor
 class VideoMedia {
   constructor(photographer, media) {
       this.name = photographer.name;
