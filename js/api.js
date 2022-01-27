@@ -1,6 +1,6 @@
 //Loading file source
 async function getPhotographers() {
-  let photographers = await fetch ("../data/FishEyeData.json")
+  let photographers = await fetch ("./data/FishEyeData.json")
       .then((response) => response.json())
       .then((data) => {
           return data.photographers;
