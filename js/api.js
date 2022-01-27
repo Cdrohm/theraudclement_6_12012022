@@ -1,6 +1,6 @@
 //Loading file source
 async function getPhotographers() {
-  let photographers = await fetch("../data/FishEyeData.json")
+  let photographers = await fetch ("../data/FishEyeData.json")
       .then((response) => response.json())
       .then((data) => {
           return data.photographers;
@@ -9,7 +9,7 @@ async function getPhotographers() {
 }
 
 async function getMedias() {
-  let medias = await fetch("../data/FishEyeData.json")
+  let medias = await fetch ("../data/FishEyeData.json")
       .then((response) => response.json())
       .then((data) => {
           return data.media;
