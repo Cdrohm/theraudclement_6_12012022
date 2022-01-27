@@ -113,11 +113,8 @@
   //Dropdown in <select> mod /!\ modif css isn't possible view library
   //Except for background-color and color, style settings applied through the style object for the option element are ignored.
   
-  #dropdown {
+  /*#dropdown {
     
-    select-selected #sort-by {
-      display: none;
-    }
     @media all and (max-width: $breakpoint-desktop) {
       display: none;
     }
@@ -131,23 +128,22 @@
       background-color: $color-primary;
       color: #fff;
       border: none;
-      border-bottom: 2px solid white;
       height: 60px;
       width: 170px;
       border-radius: 5px;
       margin: 9px 0 48px 25px;
       font-size: 18px;
 
-      select-selected {
-        padding: 20px;
+      select #sort-by{
         display: none;
+
+          option {
+            border-bottom: 2px solid white;
+            color: green;
+          }
       }
-        >* {
-          border-bottom: 1px solid white;
-          
-        }
     }
-  }
+  }*/
 
   //Dropdown in ul/li mod
   
