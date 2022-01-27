@@ -461,7 +461,7 @@ body > * {
   }
 }
 
-#dropdown select #sort-by {
+#dropdown select-selected #sort-by {
   display: none;
 }
 
@@ -488,8 +488,9 @@ body > * {
   font-size: 18px;
 }
 
-#dropdown #sort-by select {
+#dropdown #sort-by select-selected {
   padding: 20px;
+  display: none;
 }
 
 #dropdown #sort-by > * {
