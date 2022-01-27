@@ -616,10 +616,6 @@ body > * {
   }
 }
 
-#sort-by2 li {
-  list-style-type: none;
-}
-
 .popup-text {
   position: fixed;
   bottom: -5px;
