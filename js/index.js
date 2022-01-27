@@ -1,7 +1,7 @@
 //Loading content
 import {
   getPhotographers
-} from "./api.js";
+} from "../js/api.js";
 
 //initiate
 async function init() {
