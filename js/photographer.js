@@ -208,6 +208,18 @@ function sortBy(photographerMedias) {
 
   return photographerMedias;
 }
+//Dropdown2 menu ul/li
+function sortBy2 (photographerMedias) {
+  const option = document.getElementById("#sort-by2").value;
+
+  if (option == "popularity") {
+    photographerMedias.sort(function(a, b) {
+      return b.likes - a.likes;
+    }); 
+  }
+}
+
+
 
 //Form Modal
 function formModal(photographer) {

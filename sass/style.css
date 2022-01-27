@@ -478,6 +478,19 @@ body > * {
   border-bottom: 1px solid white;
 }
 
+#sort-by2 li {
+  list-style-type: none;
+}
+
+#dropdown2 #sort-by2 ul {
+  list-style-type: none;
+}
+
+#dropdown2 #sort-list {
+  font-weight: 700;
+  font-size: 18px;
+}
+
 #media-section {
   display: -webkit-box;
   display: -ms-flexbox;
