@@ -103,9 +103,14 @@
     }
   }
 
+  //Dropdown <select> phase 2
+  .dropdown {
+    
+  }
+
   //Dropdown in <select> mod /!\ modif css isn't possible view library
   //Except for background-color and color, style settings applied through the style object for the option element are ignored.
-  #dropdown * {
+ /* #dropdown * {
     padding: 20px;
   }
 
@@ -137,11 +142,11 @@
           
         }
     }
-  }
+  }*/
 
   //Dropdown in ul/li mod
   
-  #dropdown2 {
+ /* #dropdown2 {
  
     #sort-list2 {
       font-weight: 700;
@@ -149,7 +154,7 @@
       
     }
 
-  }
+  } */
 
   #media-section {
     display: flex;

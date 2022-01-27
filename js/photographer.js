@@ -182,10 +182,10 @@ function likesIncrement(photographerMedias) {
 * @param {*} photographerMedias 
 * @returns sort by pop/date/title
 */
+/*
 function sortBy(photographerMedias) {
   const option = document.querySelector("#sort-by").value;
-  /*option.style.borderBottom = '10px solid white'; //nope
-  option.style.padding = '20px'; */
+ 
 
   if (option == "popularity") {
       photographerMedias.sort(function(a, b) {
@@ -208,7 +208,8 @@ function sortBy(photographerMedias) {
   }
 
   return photographerMedias;
-}
+}*/
+
 //Dropdown2 menu ul/li
 /*
 function sortBy2 (photographerMedias) {

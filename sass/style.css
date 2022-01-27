@@ -461,42 +461,48 @@ body > * {
   }
 }
 
-#dropdown * {
-  padding: 20px;
-}
-
-@media all and (max-width: 992px) {
-  #dropdown * {
-    display: none;
+/* #dropdown * {
+    padding: 20px;
   }
-}
 
-#dropdown * #sort-list {
-  font-weight: 700;
-  font-size: 18px;
-}
+  #dropdown *{
+    
+    @media all and (max-width: $breakpoint-desktop) {
+      display: none;
+    }
 
-#dropdown * #sort-by {
-  background-color: #901C1C;
-  color: #fff;
-  border: none;
-  border-bottom: 2px solid white;
-  height: 60px;
-  width: 170px;
-  border-radius: 5px;
-  margin: 9px 0 48px 25px;
-  font-size: 18px;
-}
+    #sort-list {
+      font-weight: 700;
+      font-size: 18px;
+    }
 
-#dropdown * #sort-by > * {
-  border-bottom: 1px solid white;
-}
+    #sort-by {
+      background-color: $color-primary;
+      color: #fff;
+      border: none;
+      border-bottom: 2px solid white;
+      height: 60px;
+      width: 170px;
+      border-radius: 5px;
+      margin: 9px 0 48px 25px;
+      font-size: 18px;
+     
 
-#dropdown2 #sort-list2 {
-  font-weight: 700;
-  font-size: 18px;
-}
+        >* {
+          border-bottom: 1px solid white;
+          
+        }
+    }
+  }*/
+/* #dropdown2 {
+ 
+    #sort-list2 {
+      font-weight: 700;
+      font-size: 18px;
+      
+    }
 
+  } */
 #media-section {
   display: -webkit-box;
   display: -ms-flexbox;
