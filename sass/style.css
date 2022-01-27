@@ -470,15 +470,7 @@ body > * {
   border-bottom: 1px solid white;
 }
 
-#sort-by2 li {
-  list-style-type: none;
-}
-
-#dropdown2 #sort-by2 ul {
-  list-style-type: none;
-}
-
-#dropdown2 #sort-list {
+#dropdown2 #sort-list2 {
   font-weight: 700;
   font-size: 18px;
 }
@@ -622,6 +614,10 @@ body > * {
     width: 18.5px;
     height: 17px;
   }
+}
+
+#sort-by2 li {
+  list-style-type: none;
 }
 
 .popup-text {
