@@ -105,8 +105,7 @@
 
   //Dropdown in <select> mod
   #dropdown {
-    padding: 20px;
-
+    
     @media all and (max-width: $breakpoint-desktop) {
       display: none;
     }
@@ -128,9 +127,6 @@
       font-size: 18px;
      // padding: 10px;
 
-      option{
-        background-color: yellow;
-      }
         >* {
           border-bottom: 1px solid white;
           

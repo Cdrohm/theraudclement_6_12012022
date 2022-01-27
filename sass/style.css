@@ -444,10 +444,6 @@ body > * {
   }
 }
 
-#dropdown {
-  padding: 20px;
-}
-
 @media all and (max-width: 992px) {
   #dropdown {
     display: none;
@@ -468,10 +464,6 @@ body > * {
   border-radius: 5px;
   margin: 9px 0 48px 25px;
   font-size: 18px;
-}
-
-#dropdown #sort-by option {
-  background-color: yellow;
 }
 
 #dropdown #sort-by > * {
