@@ -4,13 +4,7 @@ async function getPhotographers() {
       .then((response) => response.json())
       .then((data) => {
           return data.photographers;
-      }
-      function (rejectionReason) { // 3
-        console.log('Erreur lors de l'analyse JSON de la réponse :', rejectionReason, responseClone); // 4
-        responseClone.text() // 5
-        .then(function (bodyText) {
-            console.log('Réception des données suivantes au lieu de données JSON valides :', bodyText); // 6
-        }););
+      });
   return photographers;
 }
 

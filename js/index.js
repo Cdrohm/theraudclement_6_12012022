@@ -10,7 +10,6 @@ async function init() {
   photographers.forEach((photographer) =>
       content.appendChild(photographerNodeFactory(photographer, photographers))
   );
-  generateTags(photographers);
 }
 
 init();
