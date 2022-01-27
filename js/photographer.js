@@ -2,14 +2,14 @@
 //Loading content
 import {
   getPhotographers
-} from "../api.js";
+} from "./api.js";
 import {
   getMedias
-} from "../api.js";
+} from "./api.js";
 import {
   enableBodyScroll,
   disableBodyScroll
-} from "../body-scroll-lock.js";
+} from "./body-scroll-lock.js";
 
 async function init() {
   let photographers = await getPhotographers();
