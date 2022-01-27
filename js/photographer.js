@@ -174,6 +174,7 @@ function likesIncrement(photographerMedias) {
   }
 }
 
+//Dropdown menu phase 2 (<select>)
 
 
 //Dropdown menu - Sort-by
