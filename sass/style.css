@@ -461,20 +461,26 @@ body > * {
   }
 }
 
+#dropdown * {
+  padding: 20px;
+}
+
 @media all and (max-width: 992px) {
-  #dropdown {
+  #dropdown * {
     display: none;
   }
 }
 
-#dropdown #sort-list {
+#dropdown * #sort-list {
   font-weight: 700;
   font-size: 18px;
 }
 
-#dropdown #sort-by {
+#dropdown * #sort-by {
   background-color: #901C1C;
   color: #fff;
+  border: none;
+  border-bottom: 2px solid white;
   height: 60px;
   width: 170px;
   border-radius: 5px;
@@ -482,7 +488,7 @@ body > * {
   font-size: 18px;
 }
 
-#dropdown #sort-by > * {
+#dropdown * #sort-by > * {
   border-bottom: 1px solid white;
 }
 
