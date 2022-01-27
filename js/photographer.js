@@ -157,7 +157,7 @@ function likesIncrement(photographerMedias) {
 
   photographerMedias.forEach((media) => {
       let mediaLikesTextContent = media.likes;
-      likesArray.push(mediaLikesTextContent);
+      likesArray.push(mediaLikesTextContent); //click +
       const reducer = (accumulator, currentValue) => accumulator + currentValue;
       const likesSum = likesArray.reduce(reducer);
       domLikesSum.textContent = likesSum;
