@@ -36,8 +36,8 @@ function photographerNodeFactory(photographer, photographers) {
   price.id = "price";
   price.style.margin = "0 0 50px 0"; //margin bottom 
 
-  urlPhotographer.href = "../html/photographer" + photographer.id + ".html"; //link to
-  profilePicture.src = "../photographersID/" + photographer.portrait; //load img
+  urlPhotographer.href = "./html/photographer" + photographer.id + ".html"; //link to
+  profilePicture.src = "./photographersID/" + photographer.portrait; //load img
   profilePicture.alt = photographer.name; //alt name on picture
   photographerName.textContent = photographer.name; //photograph name
   localisation.textContent = photographer.city + ", " + photographer.country; //localisation
