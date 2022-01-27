@@ -455,11 +455,6 @@ body > * {
   font-size: 18px;
 }
 
-#dropdown select #sort-by {
-  border-bottom: 10px solid white;
-  border: 2px solid yellow;
-}
-
 #dropdown #sort-by {
   background-color: #901C1C;
   color: #fff;
