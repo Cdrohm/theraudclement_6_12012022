@@ -183,7 +183,7 @@ function likesIncrement(photographerMedias) {
 * @param {*} photographerMedias 
 * @returns sort by pop/date/title
 */
-/*
+
 function sortBy(photographerMedias) {
   const option = document.querySelector("#sort-by").value;
  
@@ -209,7 +209,7 @@ function sortBy(photographerMedias) {
   }
 
   return photographerMedias;
-}*/
+}
 
 //Dropdown2 menu ul/li
 /*
