@@ -339,7 +339,7 @@ class LightboxMedia {
       this.loadMedia(this.medias[i - 1]);
   }
 
-  //incorp aria access
+  //incorp aria access + nav box
   buildDOM(url) {
       const dom = document.createElement("div");
       dom.classList.add("lightbox");
