@@ -400,6 +400,104 @@ body > * {
   line-height: 6rem;
   background: #901C1C;
   cursor: pointer;
+  border-radius: 0.6rem;
+}
+
+.filter-options-container {
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #901C1C;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.filter-select.open .filter-options-container {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.filter-select.open .filter-select__trigger {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.filter-option {
+  position: relative;
+  display: block;
+  margin: 0 2rem 0;
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+  line-height: 6rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.filter-option:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.filter-option.selected {
+  display: none;
+}
+
+.filter-option:not(.selected) {
+  border-top: solid 0.1rem white;
+}
+
+.arrow {
+  position: relative;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.arrow::before,
+.arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 0.15rem;
+  height: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.arrow::before {
+  left: -0.5rem;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: white;
+}
+
+.arrow::after {
+  left: 0.5rem;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: white;
+}
+
+.open .arrow::before {
+  left: -0.5rem;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.open .arrow::after {
+  left: 0.5rem;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .content-link {
