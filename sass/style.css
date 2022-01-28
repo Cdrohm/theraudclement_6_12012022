@@ -392,6 +392,14 @@ body > * {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: 300;
+  color: white;
+  height: 4.5rem;
+  line-height: 6rem;
+  background: #901C1C;
+  cursor: pointer;
 }
 
 .content-link {
