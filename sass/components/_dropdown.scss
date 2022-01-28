@@ -1,0 +1,34 @@
+//Dropdown MENU ul
+.filter {
+    display: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: start;
+      margin: 3rem 3%;
+      font-weight: 500;
+      span {
+        margin-right: 2rem;
+        font-size: 2rem;
+      }
+}
+
+.dropdownMenu {
+    width: 15rem;
+}
+
+.filter-select {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &_trigger {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+  
