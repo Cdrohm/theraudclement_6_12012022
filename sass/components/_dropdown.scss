@@ -105,7 +105,7 @@
     height: 100%;
     transition: all 0.5s;
   }
-  // animation arrow si la classe open  est ajouter ou enlever
+  //arrow animation true/false
   .arrow::before {
     left: -0.5rem;
     transform: rotate(45deg);

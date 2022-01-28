@@ -185,8 +185,15 @@ function displayFilterMenu (displayMediaList) {
   const firstFilterOption = document.querySelector(".filter-select a:first-child");
   //last child select
   const lastFilterOption = document.querySelector(".filter-select a:lasty-child");
-  
-}
+
+  // filterOption array path onclick dropdown
+  for(const filter of filterOptions) {
+    filter.addEventListener("click", functin(e)) {
+      e.preventDefault (); // if filter no selected, selected take 1st child
+      if ()
+    };
+  } 
+};
 
 
 //Dropdown menu - Sort-by
