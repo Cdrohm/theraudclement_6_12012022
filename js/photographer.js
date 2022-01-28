@@ -174,7 +174,19 @@ function likesIncrement(photographerMedias) {
   }
 }
 
-//Dropdown menu phase 2 (<select>)
+//Dropdown menu phase 2 (ul)
+
+function displayFilterMenu (displayMediaList) {
+  const dropDownMenu = document.querySelector(".dropdownMenu");
+  const filterSelect = document.querySelector(".filter-select");
+  const filterSelectTrigger = document.querySelector(".filter-select_trigger");
+  const filterOptions = document.querySelector(".filter-option");
+  //first child select
+  const firstFilterOption = document.querySelector(".filter-select a:first-child");
+  //last child select
+  const lastFilterOption = document.querySelector(".filter-select a:lasty-child");
+  
+}
 
 
 //Dropdown menu - Sort-by
