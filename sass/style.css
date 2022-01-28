@@ -481,15 +481,11 @@ body > * {
   border-radius: 5px;
   margin: 9px 0 48px 25px;
   font-size: 18px;
+  padding: 20px;
 }
 
-#dropdown #sort-by select #sort-by {
+#dropdown #sort-by #0 {
   display: none;
-}
-
-#dropdown #sort-by select #sort-by option {
-  border-bottom: 2px solid white;
-  color: green;
 }
 
 /* #dropdown2 {

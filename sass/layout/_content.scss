@@ -127,14 +127,10 @@
       border-radius: 5px;
       margin: 9px 0 48px 25px;
       font-size: 18px;
+      padding: 20px;
 
-      select #sort-by{
+      #0 {
         display: none;
-
-          option {
-            border-bottom: 2px solid white;
-            color: green;
-          }
       }
     }
   }

@@ -188,7 +188,7 @@ function sortBy(photographerMedias) {
   const option = document.querySelector("#sort-by").value;
  //const select = document.querySelector(#sort);
  //option.style.display
-
+ 
 
   if (option == "popularity") {
     
@@ -213,11 +213,14 @@ function sortBy(photographerMedias) {
 
   return photographerMedias;
 }
+
+//test select display when selected
 function displayFilter () {
 if(document.querySelector('#sort-by option[value="popularity"]:checked')) {
   document.getElementById("#1").style.display = none;
+  }
 }
-}
+
 //Form Modal
 function formModal(photographer) {
   const photographerNameContent = document.querySelector("#form-modal div.form-text");
