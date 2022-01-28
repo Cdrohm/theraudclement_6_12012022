@@ -642,8 +642,16 @@ body > * {
   padding: 20px;
 }
 
-#dropdown #sort-by #0-selected {
-  display: none;
+#dropdown #sort-by option#\30 {
+  color: green;
+}
+
+#dropdown #sort-by option#\31 {
+  color: blue;
+}
+
+#dropdown #sort-by option#\32 {
+  color: yellow;
 }
 
 #media-section {

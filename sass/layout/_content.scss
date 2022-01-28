@@ -129,8 +129,19 @@
       font-size: 18px;
       padding: 20px;
 
-      #0-selected {
-        display: none;
+      //option popularity
+      option#\30 {
+        color: green
+      }
+
+      //option date
+      option#\31 {
+        color:blue;
+      }
+
+      //option title
+      option#\32 {
+        color: yellow;
       }
     }
   }

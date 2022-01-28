@@ -176,7 +176,7 @@ function likesIncrement(photographerMedias) {
 
 //Dropdown menu phase 2 (ul)
 
-function displayFilterMenu (displayMediaList) {
+/*function displayFilterMenu (displayMediaList) {
   const dropDownMenu = document.querySelector(".dropdownMenu");
   const filterSelect = document.querySelector(".filter-select");
   const filterSelectTrigger = document.querySelector(".filter-select_trigger");
@@ -190,10 +190,10 @@ function displayFilterMenu (displayMediaList) {
   for(const filter of filterOptions) {
     filter.addEventListener("click", functin(e)) {
       e.preventDefault (); // if filter no selected, selected take 1st child
-      if ()
+      
     };
   } 
-};
+};*/
 
 
 //Dropdown menu - Sort-by
