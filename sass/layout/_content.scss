@@ -105,8 +105,9 @@
 
   //Dropdown in <select> mod /!\ modif css isn't possible view library
   //Except for background-color and color, style settings applied through the style object for the option element are ignored.
-  
-  /*#dropdown {
+
+    
+  #dropdown {
     
     @media all and (max-width: $breakpoint-desktop) {
       display: none;
@@ -136,7 +137,7 @@
           }
       }
     }
-  }*/
+  }
 
   //Dropdown in ul/li mod
   

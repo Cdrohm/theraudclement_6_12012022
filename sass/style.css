@@ -461,37 +461,37 @@ body > * {
   }
 }
 
-/*#dropdown {
-    
-    @media all and (max-width: $breakpoint-desktop) {
-      display: none;
-    }
+@media all and (max-width: 992px) {
+  #dropdown {
+    display: none;
+  }
+}
 
-    #sort-list {
-      font-weight: 700;
-      font-size: 18px;
-    }
+#dropdown #sort-list {
+  font-weight: 700;
+  font-size: 18px;
+}
 
-    #sort-by {
-      background-color: $color-primary;
-      color: #fff;
-      border: none;
-      height: 60px;
-      width: 170px;
-      border-radius: 5px;
-      margin: 9px 0 48px 25px;
-      font-size: 18px;
+#dropdown #sort-by {
+  background-color: #901C1C;
+  color: #fff;
+  border: none;
+  height: 60px;
+  width: 170px;
+  border-radius: 5px;
+  margin: 9px 0 48px 25px;
+  font-size: 18px;
+}
 
-      select #sort-by{
-        display: none;
+#dropdown #sort-by select #sort-by {
+  display: none;
+}
 
-          option {
-            border-bottom: 2px solid white;
-            color: green;
-          }
-      }
-    }
-  }*/
+#dropdown #sort-by select #sort-by option {
+  border-bottom: 2px solid white;
+  color: green;
+}
+
 /* #dropdown2 {
  
     #sort-list2 {
