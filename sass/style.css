@@ -401,6 +401,11 @@ body > * {
   background: #901C1C;
   cursor: pointer;
   border-radius: 0.6rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  text-decoration: none;
 }
 
 .filter-options-container {
@@ -422,13 +427,6 @@ body > * {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
-}
-
-.filter-select.open .filter-select__trigger {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
 }
 
 .filter-option {
@@ -644,6 +642,7 @@ body > * {
 
 #dropdown #sort-by option#\30 {
   color: green;
+  border: blue;
 }
 
 #dropdown #sort-by option#\31 {

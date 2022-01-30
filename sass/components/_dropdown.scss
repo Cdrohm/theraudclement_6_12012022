@@ -36,6 +36,11 @@
         background: $color-primary;
         cursor: pointer;
         border-radius: 0.6rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        text-decoration: none;
     }
 }
 
@@ -59,12 +64,7 @@
     visibility: visible;
     pointer-events: all;
 }
-.filter-select__trigger {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    }
+
 }
 
 .filter-option {
