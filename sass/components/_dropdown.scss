@@ -59,11 +59,12 @@
 }
   
 .filter-select.open {
-.filter-options-container {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: all;
-}
+  
+  .filter-options-container {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+  }
 
 }
 
