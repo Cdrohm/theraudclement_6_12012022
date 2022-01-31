@@ -10,6 +10,7 @@
       span {
         margin-right: 2rem;
         font-size: 2rem;
+        padding: 20px;
       }
 }
 
@@ -27,6 +28,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-decoration: none;
     
     &_trigger {
         position: relative;
@@ -61,6 +63,7 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    width: 15rem;
     z-index: 2;
     
 }
@@ -85,6 +88,7 @@
     line-height: 6rem;
     cursor: pointer;
     transition: all 0.5s;
+    width: 15rem;
     &:hover {
       cursor: pointer;
       text-decoration: none;
