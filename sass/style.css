@@ -438,6 +438,7 @@ body > * {
   pointer-events: none;
   width: 15rem;
   z-index: 2;
+  border-radius: 5px;
 }
 
 .filter-select.open .filter-options-container {
@@ -477,7 +478,7 @@ body > * {
   position: relative;
   height: 1.5rem;
   width: 1.5rem;
-  left: 175px;
+  left: 195px;
   bottom: 25px;
 }
 
