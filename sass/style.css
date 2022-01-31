@@ -459,6 +459,7 @@ body > * {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   width: 15rem;
+  text-decoration: none;
 }
 
 .filter-option:hover {
