@@ -364,13 +364,13 @@ body > * {
 .filter span {
   margin-right: 2rem;
   font-size: 2rem;
-  padding: 20px;
+  text-decoration: none;
 }
 
 .dropdownMenu {
   width: 15rem;
   background-color: #901C1C;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,7 +416,6 @@ body > * {
   line-height: 6rem;
   background: #901C1C;
   cursor: pointer;
-  border-radius: 0.6rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
@@ -428,17 +427,15 @@ body > * {
   position: absolute;
   display: block;
   top: 100%;
-  left: 0;
+  left: -27px;
   right: 0;
   background: #901C1C;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  opacity: 0;
-  visibility: hidden;
   pointer-events: none;
   width: 15rem;
   z-index: 2;
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
 }
 
 .filter-select.open .filter-options-container {
@@ -452,7 +449,7 @@ body > * {
   display: block;
   margin: 0 2rem 0;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 500;
   color: white;
   line-height: 6rem;
   cursor: pointer;
@@ -469,10 +466,12 @@ body > * {
 
 .filter-option.selected {
   display: none;
+  text-decoration: none;
 }
 
 .filter-option:not(.selected) {
-  border-top: solid 0.1rem white;
+  border-top: solid 1px white;
+  width: 80%;
 }
 
 .arrow {
