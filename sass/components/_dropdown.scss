@@ -15,13 +15,15 @@
 
 .dropdownMenu {
     width: 15rem;
+    background-color: $color-primary;
 }
 
 .filter-select {
     position: relative;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    
     &_trigger {
         position: relative;
         display: flex;
@@ -56,10 +58,11 @@
     visibility: hidden;
     pointer-events: none;
     z-index: 2;
+    
 }
   
 .filter-select.open {
-  
+
   .filter-options-container {
       opacity: 1;
       visibility: visible;
@@ -80,7 +83,7 @@
     transition: all 0.5s;
     &:hover {
       cursor: pointer;
-      text-decoration: underline;
+      text-decoration: none;
     }
     &.selected {
       display: none;
@@ -95,6 +98,8 @@
     position: relative;
     height: 1.5rem;
     width: 1.5rem;
+    right: -200px;
+    top: -20px;
   }
   
   .arrow::before,
@@ -125,3 +130,43 @@
     left: 0.5rem;
     transform: rotate(45deg);
   }
+
+
+ 
+
+
+
+
+//Dropdown type input radio
+input[type="radio"] {
+  display: none;
+}
+
+/* style this to your heart's content */
+
+input[type="radio"] + label {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background-color: $color-primary;
+  color: white;
+  display: inline-block;
+}
+
+.radio_select:hover label {
+  display: inline-block;
+}
+
+
+/* none functional styles.  just regular styling */
+
+.radio_select {
+  background-color: $color-primary;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 18px;
+  height: 60px;
+  width: 170px;
+}

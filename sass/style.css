@@ -368,6 +368,7 @@ body > * {
 
 .dropdownMenu {
   width: 15rem;
+  background-color: #901C1C;
 }
 
 .filter-select {
@@ -379,6 +380,9 @@ body > * {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .filter-select_trigger {
@@ -444,7 +448,7 @@ body > * {
 
 .filter-option:hover {
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .filter-option.selected {
@@ -459,6 +463,8 @@ body > * {
   position: relative;
   height: 1.5rem;
   width: 1.5rem;
+  right: -200px;
+  top: -20px;
 }
 
 .arrow::before,
@@ -496,6 +502,36 @@ body > * {
   left: 0.5rem;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+/* style this to your heart's content */
+input[type="radio"] + label {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #901C1C;
+  color: white;
+  display: inline-block;
+}
+
+.radio_select:hover label {
+  display: inline-block;
+}
+
+/* none functional styles.  just regular styling */
+.radio_select {
+  background-color: #901C1C;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 18px;
+  height: 60px;
+  width: 170px;
 }
 
 .content-link {
@@ -638,19 +674,22 @@ body > * {
   margin: 9px 0 48px 25px;
   font-size: 18px;
   padding: 20px;
-}
+  /*
+      //option popularity
+      option#\30 {
+        color: green;
+        border: blue;
+      }
 
-#dropdown #sort-by option#\30 {
-  color: green;
-  border: blue;
-}
+      //option date
+      option#\31 {
+        color:blue;
+      }
 
-#dropdown #sort-by option#\31 {
-  color: blue;
-}
-
-#dropdown #sort-by option#\32 {
-  color: yellow;
+      //option title
+      option#\32 {
+        color: yellow;
+      }*/
 }
 
 #media-section {

@@ -188,7 +188,7 @@ function likesIncrement(photographerMedias) {
 
   // filterOption array path onclick dropdown
   for(const filter of filterOptions) {
-    filter.addEventListener("click", functin(e)) {
+    filter.addEventListener("click", function(e)) {
       e.preventDefault (); // if filter no selected, selected take 1st child
       
     };
