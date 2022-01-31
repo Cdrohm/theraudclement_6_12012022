@@ -16,6 +16,10 @@
 .dropdownMenu {
     width: 15rem;
     background-color: $color-primary;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .filter-select {
@@ -98,8 +102,8 @@
     position: relative;
     height: 1.5rem;
     width: 1.5rem;
-    right: -200px;
-    top: -20px;
+    left: 175px;
+    bottom: 25px;
   }
   
   .arrow::before,
@@ -138,11 +142,10 @@
 
 
 //Dropdown type input radio
-input[type="radio"] {
+/*input[type="radio"] {
   display: none;
 }
 
-/* style this to your heart's content */
 
 input[type="radio"] + label {
   display: none;
@@ -159,7 +162,7 @@ input[type="radio"]:checked + label {
 }
 
 
-/* none functional styles.  just regular styling */
+
 
 .radio_select {
   background-color: $color-primary;
@@ -169,4 +172,4 @@ input[type="radio"]:checked + label {
   font-size: 18px;
   height: 60px;
   width: 170px;
-}
+} */

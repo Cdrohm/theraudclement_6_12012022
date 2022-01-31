@@ -107,7 +107,7 @@
   //Except for background-color and color, style settings applied through the style object for the option element are ignored.
 
     
-  #dropdown {
+ /* #dropdown {
     
     @media all and (max-width: $breakpoint-desktop) {
       display: none;
@@ -128,7 +128,7 @@
       margin: 9px 0 48px 25px;
       font-size: 18px;
       padding: 20px;
-/*
+
       //option popularity
       option#\30 {
         color: green;
@@ -143,9 +143,9 @@
       //option title
       option#\32 {
         color: yellow;
-      }*/
+      }
     }
-  }
+  }*/
 
   #media-section {
     display: flex;
