@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../sass/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!--Onglet icon-->
     <link rel="shortcut icon" href="https://img.icons8.com/ios/50/000000/camera--v3.png" />
     <title>FishEye - Photographes</title>
@@ -31,7 +33,7 @@
             <button id="contact" aria-label="Contact Me"></button>
         </section>
 
-        <!--Dropdown menu v2 <select> 
+        <!--  Dropdown menu v2 <select>  
             <div class="dropdown">
                 <label for="sort-by" id="sort-list">Trier par</label>
                 <select>
@@ -39,16 +41,16 @@
                     <option value="date">Date</option>
                     <option value="title">Titre</option>
                 </select>
-            </div> 
+            </div> -->
 
-       <div id="dropdown">
+        <div id="dropdown">
             <label for="sort-by" id="sort-list">Trier par</label>
-                <select name="sort" id="sort-by" aria-label="Order by">                
-                    <option id="0" value="popularity">Popularité</option>
-                    <option id="1" value="date">Date</option>
-                    <option id="2" value="title">Titre</option>
-                </select>
-        </div>-->
+            <select name="sort" id="sort-by" aria-label="Order by">
+                <option id="0" value="popularity">Popularité</option>
+                <option id="1" value="date">Date</option>
+                <option id="2" value="title">Titre</option>
+            </select>
+        </div>
 
         <!--Dropdown type input radio
         <section class="filter">
@@ -76,7 +78,7 @@
         </div>
     </section> -->
 
-        <!--Dropdown menu <ul/li> -->
+        <!--Dropdown menu <ul/li> 
         <section class="filter">
             <span id="trierPar">Trier par </span>
             <div class="dropdownMenu">
@@ -85,7 +87,9 @@
                         aria-haspopup="listbox" aria-label="Trier par">
                         <span>Popularité</span>
                         <div class="arrow">
+                            
                             <i class="fas fa-chevron-down"></i>
+                            
                             <i class="fas fa-chevron-up"></i>
                         </div>
                     </a>
@@ -99,9 +103,59 @@
                     </div>
                 </div>
             </div>
-        </section>  
+        </section>  -->
 
-        <!--Dropdown menu ul/li v2-->
+        <!--Dropdown menu v2
+        
+        <div class="filter">
+            <span id="sort-text">Trier par</span>
+            <div id="sort-wrapper">
+                <button class="sort-btn" aria-haspopup="listbox">Popularité</button>
+                <span class="fas fa-chevron-down arrow-down-open" role='button'></span>
+                <ul class="hidden-sort" role="listbox">
+                    <li class="sort" role='option'>Popularité <span class="fas fa-chevron-up arrow-up-close"></span>
+                    </li>
+                    <li class="sort" role='option'>Date</li>
+                    <li class="sort" role='option'>Tître</li>
+                </ul>
+            </div>
+        </div> -->
+
+        <!--Dropdown v3
+        <section class="filter">
+        <div class="sort">
+            <span id="sort-text">Triez-par</span>
+            <button tabindex="1" id="sort-list_closed" class="popularity-btn sort-list_closed">
+                <span id="selected-filter" class="category category-closed">
+                    <span id="text-choice">
+                        <span id="text-choice-change">Popularité</span>
+                        <span><i class="fas fa-chevron-down"></i></span>
+                    </span>
+                </span>
+            </button>
+            <nav id="sort-list" class="sort-by popularity-btn popularity-btn-opened">
+                <ul>
+                    <li>
+                        <button tabindex="1" id="popularity-btn" class="sort-by_popu" data-order="popularity">
+                            Popularité
+                            <span><i class="fas fa-chevron-up"></i></span>
+                        </button>
+                    </li>
+                    <li>
+                        <button tabindex="1" id="date-btn" class="sort-by sort-by_date" data-order="date">
+                            Date
+                        </button>
+                    </li>
+
+                    <li>
+                        <button tabindex="1" id="title-btn" class="sort-by sort-by_title" data-order="title">
+                            Titre
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section> -->
 
 
         <!--Box photos => JS-->
@@ -110,7 +164,8 @@
 
         <!--like / Price-->
         <div class="popup-text">
-            <span class="likes-total"><span class="number"></span><img src="../img/logo/blackheart.png" alt="likes"></span>
+            <span class="likes-total"><span class="number"></span><img src="../img/logo/blackheart.png"
+                    alt="likes"></span>
             <span class="rates">500€ / jour</span>
         </div>
 
@@ -125,21 +180,33 @@
                         </div>
                         <div class="formData">
                             <label for="first">Prénom</label><br />
-                            <input class="text-control" type="text" id="first" name="first" aria-label="First name" placeholder="John" required /><br />
+                            <input class="text-control" type="text" id="first" name="first" aria-label="First name"
+                                placeholder="John" required /><br />
+                                <span id="missfirst"></span>
                         </div>
+
                         <div class="formData">
                             <label for="last">Nom</label><br />
-                            <input class="text-control" type="text" id="last" name="last" aria-label="Last name" placeholder="Doe" required /><br />
+                            <input class="text-control" type="text" id="last" name="last" aria-label="Last name"
+                                placeholder="Doe" required /><br />
+                                <span id="misslast"></span>
                         </div>
+
                         <div class="formData">
                             <label for="email">E-mail</label><br />
-                            <input class="text-control" type="email" id="email" name="email" aria-label="Email" placeholder="John.Doe@email.com" required /><br />
+                            <input class="text-control" type="email" id="email" name="email" aria-label="Email"
+                                placeholder="John.Doe@email.com" required /><br />
+                                <span id="missemail"></span>
                         </div>
+
                         <div class="formData">
                             <!--possibility textarea-->
                             <label for="message">Votre message</label><br />
-                            <textarea class="text-control message" id="message" name="message" rows="10" cols="50" aria-label="Your message" placeholder="Votre message" required></textarea>
+                            <textarea class="text-control message" id="message" name="message" rows="10" cols="50"
+                                aria-label="Your message" placeholder="Votre message" required></textarea>
+                                <span id="missmessage"></span>
                         </div>
+
                         <!--Send-->
                         <input class="btn-submit" type="submit" value="Envoyer" aria-label="Send" />
                     </form>

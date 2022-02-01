@@ -195,6 +195,62 @@ function likesIncrement(photographerMedias) {
   } 
 };*/
 
+//Dropdown v3
+//Sort by Pop/Date/title
+/*
+displayReorderList(); {
+  let reorderAreaClosed = document.getElementById("sort-list_closed");
+  let reorderAreaOpen = document.getElementById("sort-list");
+  reorderAreaClosed.addEventListener("click", function (evt) {
+    reorderAreaClosed.style.display = "none";
+    reorderAreaOpen.style.display = "flex";
+  });
+  reorderAreaOpen.addEventListener("click", function (evt) {
+    reorderAreaClosed.style.display = "flex";
+    reorderAreaOpen.style.display = "none";
+  });
+}
+
+listenForReordering(); {
+  let elements = document.getElementsByClassName("sort-by");
+  let reorderAreaFirst = document.getElementById("text-choice-change");
+  for (let el of elements) {
+    el.addEventListener("click", (e) => {
+      let order = e.target.getAttribute("data-order");
+
+      this.order = order;
+      el.style.order == "0";
+
+      this.reorder(order);
+      reorderAreaFirst.textContent = e.target.textContent;
+    });
+  }
+}
+
+reorder(order); {
+  let methodName = "reorderBy" + ucfirst(order);
+  this[methodName]();
+  this.build(this.all);
+}
+reorderByPopularity(); {
+  this.all = this.all.sort((a, b) => {
+    return b.likes - a.likes;
+  });
+}
+reorderByDate() ;{
+  this.all = this.all.sort((a, b) => {
+    let dateA = new Date(a.date);
+    let dateB = new Date(b.date);
+
+    return dateB - dateA;
+  });
+}
+reorderByTitle(); {
+  this.all = this.all.sort((a, b) => {
+    return a.title > b.title ? 1 : -1;
+  });
+}*/
+
 
 //Dropdown menu - Sort-by
 /**
@@ -231,14 +287,14 @@ function sortBy(photographerMedias) {
   }
 
   return photographerMedias;
-}
+};
 
 //test select display when selected
-function displayFilter () {
+/*displayFilter (); {
 if(document.querySelector('#sort-by option[value="popularity"]:checked')) {
   document.getElementById("#1").style.display = none;
   }
-}
+} */
 
 //Form Modal
 function formModal(photographer) {
@@ -251,6 +307,19 @@ function formModal(photographer) {
   const closeFormBtn = document.querySelector("#form-modal button.close");
   const formModalBtn = document.querySelector("#main-photographer #contact");
 
+  let firstName = document.getElementById('first');
+  let lastName = document.getElementById('last');
+  const eMail = document.getElementById('email');
+  const message = document.getElementById('message');
+
+  const errorFirstName = document.getElementById('missfirst');
+  const errorLastName = document.getElementById('misslast');
+  const errorMail = document.getElementById('missemail');
+  const errorMessage = document.getElementById('missmessage');
+
+  const regex = /^[a-zA-Z\s]*$/; //lettres seulement
+
+  //Modal event
   formModalBtn.onclick = () => {
       formModalBg.style.display = "block";
       document.getElementById("first").focus();
@@ -268,6 +337,92 @@ function formModal(photographer) {
       formModalBg.style.display = "none";
       enableBodyScroll(formModalBg);
   };
+}
+
+//Form data
+//Check firstName
+function validateFirstName(firstName) {
+  console.log (firstName.value.match(regex),regex.test(firstName));
+  if (firstName.value.trim().length < 2 || first.value.trim() === '' || !firstName.value.match(regex)) {
+      errorFirstName.style.display = "inline";
+      errorFirstName.innerText = "Veuillez entrer 2 caractères ou plus pour le champ du Prénom.";
+      errorFirstName.style.color = "red";
+      errorFirstName.style.fontSize = "0.8rem";
+      errorFirstName.style.marginTop = "10px";
+      firstName.style.border = "solid red 2px";
+      return false;
+  } else {
+      errorFirstName.style.display = "none";
+      firstName.style.border = "solid #279e7a 3px";
+      return true;
+  };
+}
+
+//Check lastName
+function validateLastName(lastName) {
+  if (lastName.value.toString().trim().length < 2 || first.value.trim() === '' || !lastName.value.match(regex)) {
+      errorLastName.style.display = "inline";
+      errorLastName.innerText = "Veuillez entrer 2 caractères ou plus pour le champ du Nom.";
+      errorLastName.style.color = "red";
+      errorLastName.style.fontSize = "0.8rem";
+      errorLastName.style.marginTop = "10px";
+      lastName.style.border = "solid red 2px";
+      return false;
+  } else {
+      errorLastName.style.display = "none";
+      lastName.style.border = "solid #279e7a 3px";
+      return true;
+  }
+}
+
+//Check email
+function validateEmail(eMail) {
+  if (!/[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(eMail.value)) {
+      errorMail.style.display = "inline"
+      errorMail.innerText = "Veuillez entrer une adresse mail valide.";
+      errorMail.style.color = "red";
+      errorMail.style.fontSize = "0.8rem";
+      errorMail.style.marginTop = "10px";
+      eMail.style.border = "solid red 2px";
+      return false;
+  } else {
+      errorMail.style.display = "none";
+      eMail.style.border = "solid #279e7a 3px";
+      return true;
+  }
+}
+
+//Check message
+function validateMessage(message) {
+  if (message.value.toString().trim().length < 2 ) {
+      errorLastName.style.display = "inline";
+      errorLastName.innerText = "Veuillez rédiger votre message ici";
+      errorLastName.style.color = "red";
+      errorLastName.style.fontSize = "0.8rem";
+      errorLastName.style.marginTop = "10px";
+      lastName.style.border = "solid red 2px";
+      return false;
+  } else {
+      errorLastName.style.display = "none";
+      lastName.style.border = "solid #279e7a 3px";
+      return true;
+  }
+}
+
+//Validation form 
+function validate() {
+  //déclarer une variable
+  let isFormValidate = [];
+
+  isFormValidate.push(validateFirstName(firstName));
+  isFormValidate.push(validateLastName(lastName));
+  isFormValidate.push(validateEmail(eMail));
+  isFormValidate.push(validateMessage(message));
+  
+  if (!isFormValidate.includes(false)) {
+      form.style.display = "none";
+      confirmationValidation.style.display = "flex";
+  }
 }
 
 //Box photo
