@@ -307,15 +307,15 @@ function formModal(photographer) {
   const closeFormBtn = document.querySelector("#form-modal button.close");
   const formModalBtn = document.querySelector("#main-photographer #contact");
 
-  let firstName = document.getElementById('first');
-  let lastName = document.getElementById('last');
-  const eMail = document.getElementById('email');
-  const message = document.getElementById('message');
+  const firstName = document.querySelector("#first");
+  const lastName = document.querySelector("#last");
+  const eMail = document.querySelector("#email");
+  const message = document.querySelector("#message");
 
-  const errorFirstName = document.getElementById('missfirst');
-  const errorLastName = document.getElementById('misslast');
-  const errorMail = document.getElementById('missemail');
-  const errorMessage = document.getElementById('missmessage');
+  const errorFirstName = document.querySelector("#missfirst");
+  const errorLastName = document.querySelector("#misslast");
+  const errorMail = document.querySelector("#missemail");
+  const errorMessage = document.querySelector("#missmessage");
 
   const regex = /^[a-zA-Z\s]*$/; //lettres seulement
 
