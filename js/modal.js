@@ -122,3 +122,27 @@ function validEmail(e) {
         return true;
     }
 }
+
+/**
+ * 
+ * @param {*} e valid Message
+ * @returns error / too short or valid
+ */
+function validateMessage(e) {
+    if(message.value.valueMissing) {
+        e.preventDefault();
+        errorMessage.textContent = "Veuillez rédiger votre message.";
+        message.classList.replace("text-control", "error-input");
+        return false;
+
+    } else if (message.value.length < 6) {
+        errorMessage.textContent = "Votre message est trop court.";
+        message.classList.replace("text-control", "error-input");
+        return false;
+
+    } else {
+        errorMessage.textContent = " ";
+        message.classList.replace("error-input", "text-control");
+        return true;
+    }
+}
