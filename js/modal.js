@@ -48,8 +48,36 @@ function closeModal () {
     launchBtn.style.display = "block";
 }
 
+/**
+ * 
+ * @param {*} e valid firstName
+ * @returns error / 2 carac mini or valid
+ */
 function validFirstName(e) {
     if(firstName.validity.valueMissing) {
-        
+        e.preventDefault();
+        errorFirstName.textContent = "Veuillez renseigner votre prénom.";
+        firstName.classList.replace("text-control", "error-input");
+        return false;
+
+    } else if (firstName.value.length < 2) {
+        e.preventDefault();
+        errorFirstName.textContent = "Le prénom doit comporte au moins 2 caractères.";
+        firstName.classList.replace("text-control", "error-input");
+        return false;
+
+    } else {
+        error.firstName.textContent = " ";
+        firstName.classList.replace("error-input", "text-control");
+        return true;
+    }
+}
+
+function validLastName(e) {
+    if(lastName.validity.valueMissing) {
+        e.preventDefault();
+        errorLastName.textContent = "Veuillez renseigner votre nom.";
+        lastName.classList.replace("text-control", "error-input");
+        return false;
     }
 }
