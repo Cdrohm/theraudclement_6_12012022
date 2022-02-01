@@ -128,7 +128,7 @@ function validEmail(e) {
  * @param {*} e valid Message
  * @returns error / too short or valid
  */
-function validateMessage(e) {
+function validMessage(e) {
     if(message.value.valueMissing) {
         e.preventDefault();
         errorMessage.textContent = "Veuillez rédiger votre message.";
@@ -145,4 +145,13 @@ function validateMessage(e) {
         message.classList.replace("error-input", "text-control");
         return true;
     }
+}
+
+function validateForm (e) {
+    let firstNameValid = validFirstName();
+    let lastNameValid = validLastName();
+    let mailValid = validEmail();
+    let messageValid = validMessage();
+
+    let isFormValid = firstNameValid && lastNameValid && mailValid aa messageValid
 }
