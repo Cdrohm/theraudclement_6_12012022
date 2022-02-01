@@ -426,7 +426,8 @@ function validate() {
 }
 
 //Return console log
-submitFormEvent (); {
+/*
+submitFormEvent () {
   document.getElementById("reserve").onsubmit = (e) => {
     e.preventDefault();
 
@@ -444,7 +445,7 @@ submitFormEvent (); {
       };
       console.log(user);
     }
-}
+}*/
 
 //Box photo
 function initLightbox() {
