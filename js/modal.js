@@ -147,11 +147,40 @@ function validMessage(e) {
     }
 }
 
+/**
+ * 
+ * @param {*} e valid Form if conditions true
+ */
 function validateForm (e) {
     let firstNameValid = validFirstName();
     let lastNameValid = validLastName();
     let mailValid = validEmail();
     let messageValid = validMessage();
 
-    let isFormValid = firstNameValid && lastNameValid && mailValid aa messageValid
+    let isFormValid = firstNameValid && lastNameValid && mailValid && messageValid;
+
+    if (isFormValid) {
+        validationBtn.classList.remove("btn-submit_off");
+        validationBtn.classList.add("btn-submint_on");
+
+    } else {
+        validationBtn.classList.add("btn-submit_on");
+        validationBtn.classList.remove("btn-submit_off");
+    }
 }
+
+/**
+ * send form with btn modif
+ */
+function sendForm () {
+    if (validationBtn.classList.contains("btn-submit_on")) {
+        modalBg.style.display = "none";
+        launchBtn.style.display = "block";
+    }
+}
+
+//Console log with informations
+validationBtn.addEventListener("click", function() {
+    console.log("Prénom: " + firstName.value);
+    console.log("Nom: " + lastName.value);
+})
