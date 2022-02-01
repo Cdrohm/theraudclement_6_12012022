@@ -342,7 +342,7 @@ function formModal(photographer) {
 //Form data
 //Check firstName
 function validateFirstName(firstName) {
-  console.log (firstName.value.match(regex),regex.test(firstName));
+  //console.log (firstName.value.match(regex),regex.test(firstName));
   if (firstName.value.trim().length < 2 || first.value.trim() === '' || !firstName.value.match(regex)) {
       errorFirstName.style.display = "inline";
       errorFirstName.innerText = "Veuillez entrer 2 caractères ou plus pour le champ du Prénom.";
@@ -423,6 +423,27 @@ function validate() {
       form.style.display = "none";
       confirmationValidation.style.display = "flex";
   }
+}
+
+//Return console log
+submitFormEvent (); {
+  document.getElementById("reserve").onsubmit = (e) => {
+    e.preventDefault();
+
+      const firstName = document.getElementById("first");
+      const lastName = document.getElementById("last");
+      const eMail = document.getElementById("email");
+      const message = document.getElementById("message");
+  
+
+      const user = {
+        firstName: firstName.value,
+        lastName: lastName.value,
+        eMail: eMail.value,
+        message: message.value,
+      };
+      console.log(user);
+    }
 }
 
 //Box photo
