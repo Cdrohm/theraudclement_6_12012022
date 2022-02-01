@@ -36,3 +36,20 @@ firstName.addEventListener("keyup", validFirstName);
 lastName.addEventListener("keyup", validLastName);
 mail.addEventListener("keyup", validEmail);
 message.addEventListener("keyup", validMessage);
+
+//F modal
+function launchModal() {
+    modalBg.style.display = "block";
+    launchBtn.style.display = "none";
+}
+
+function closeModal () {
+    modalBg.style.display = "none";
+    launchBtn.style.display = "block";
+}
+
+function validFirstName(e) {
+    if(firstName.validity.valueMissing) {
+        
+    }
+}
