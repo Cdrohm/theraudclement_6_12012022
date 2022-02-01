@@ -62,7 +62,7 @@ function validFirstName(e) {
 
     } else if (firstName.value.length < 2) {
         e.preventDefault();
-        errorFirstName.textContent = "Le prénom doit comporte au moins 2 caractères.";
+        errorFirstName.textContent = "Le prénom doit comporter au moins 2 caractères minimum.";
         firstName.classList.replace("text-control", "error-input");
         return false;
 
@@ -73,11 +73,52 @@ function validFirstName(e) {
     }
 }
 
+/**
+ * 
+ * @param {*} e valid Last Name
+ * @returns error / 2 carac mini or valid
+ */
 function validLastName(e) {
     if(lastName.validity.valueMissing) {
         e.preventDefault();
         errorLastName.textContent = "Veuillez renseigner votre nom.";
         lastName.classList.replace("text-control", "error-input");
         return false;
+
+    } else if (lastName.value.length < 2) {
+        e.preventDefault();
+        errorLastName.textContent = "Le nom doit comporter au moins 2 caractères minimum."
+        lastName.classList.replace("text-control", "error-input");
+        return false
+
+    } else {
+        errorLastName.textContent = " ";
+        lastName.classList.replace("error-input", "text-control");
+        return true;
+    }
+}
+
+/**
+ * 
+ * @param {*} e valid email 
+ * @returns error / cf regex carac or valid
+ */
+function validEmail(e) {
+    if(mail.validity.valueMissing) {
+        e.preventDefault();
+        errorMail.textContent = "Veuillez renseigner votre adresse email.";
+        mail.classList.replace("text-control", "error-input");
+        return false;
+
+    } else if (!mailRegex.value.match(mailRegex)) {
+        e.preventDefault();
+        errorMail.textContent = "Veuillez renseigner une adresse mail valide.";
+        mail.classList.replace("text-control", "error-input");
+        return false;
+
+    } else {
+        errorMail.textContent = " ";
+        mail.classList.replace("error-input", "text-control");
+        return true;
     }
 }
