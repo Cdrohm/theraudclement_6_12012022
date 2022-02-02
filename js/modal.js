@@ -183,4 +183,6 @@ function sendForm () {
 validationBtn.addEventListener("click", function() {
     console.log("Prénom: " + firstName.value);
     console.log("Nom: " + lastName.value);
+    console.log("Adresse email: " + mail.value);
+    console.log("Message: " + message.value);
 })
