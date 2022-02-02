@@ -307,17 +307,7 @@ function formModal(photographer) {
   const closeFormBtn = document.querySelector("#form-modal button.close");
   const formModalBtn = document.querySelector("#main-photographer #contact");
 
-  const firstName = document.querySelector("#first");
-  const lastName = document.querySelector("#last");
-  const eMail = document.querySelector("#email");
-  const message = document.querySelector("#message");
 
-  const errorFirstName = document.querySelector("#missfirst");
-  const errorLastName = document.querySelector("#misslast");
-  const errorMail = document.querySelector("#missemail");
-  const errorMessage = document.querySelector("#missmessage");
-
-  const regex = /^[a-zA-Z\s]*$/; //lettres seulement
 
   //Modal event
   formModalBtn.onclick = () => {
@@ -339,113 +329,7 @@ function formModal(photographer) {
   };
 }
 
-//Form data
-//Check firstName
-function validateFirstName(firstName) {
-  //console.log (firstName.value.match(regex),regex.test(firstName));
-  if (firstName.value.trim().length < 2 || first.value.trim() === '' || !firstName.value.match(regex)) {
-      errorFirstName.style.display = "inline";
-      errorFirstName.innerText = "Veuillez entrer 2 caractères ou plus pour le champ du Prénom.";
-      errorFirstName.style.color = "red";
-      errorFirstName.style.fontSize = "0.8rem";
-      errorFirstName.style.marginTop = "10px";
-      firstName.style.border = "solid red 2px";
-      return false;
-  } else {
-      errorFirstName.style.display = "none";
-      firstName.style.border = "solid #279e7a 3px";
-      return true;
-  };
-}
 
-//Check lastName
-function validateLastName(lastName) {
-  if (lastName.value.toString().trim().length < 2 || first.value.trim() === '' || !lastName.value.match(regex)) {
-      errorLastName.style.display = "inline";
-      errorLastName.innerText = "Veuillez entrer 2 caractères ou plus pour le champ du Nom.";
-      errorLastName.style.color = "red";
-      errorLastName.style.fontSize = "0.8rem";
-      errorLastName.style.marginTop = "10px";
-      lastName.style.border = "solid red 2px";
-      return false;
-  } else {
-      errorLastName.style.display = "none";
-      lastName.style.border = "solid #279e7a 3px";
-      return true;
-  }
-}
-
-//Check email
-function validateEmail(eMail) {
-  if (!/[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(eMail.value)) {
-      errorMail.style.display = "inline"
-      errorMail.innerText = "Veuillez entrer une adresse mail valide.";
-      errorMail.style.color = "red";
-      errorMail.style.fontSize = "0.8rem";
-      errorMail.style.marginTop = "10px";
-      eMail.style.border = "solid red 2px";
-      return false;
-  } else {
-      errorMail.style.display = "none";
-      eMail.style.border = "solid #279e7a 3px";
-      return true;
-  }
-}
-
-//Check message
-function validateMessage(message) {
-  if (message.value.toString().trim().length < 2 ) {
-      errorLastName.style.display = "inline";
-      errorLastName.innerText = "Veuillez rédiger votre message ici";
-      errorLastName.style.color = "red";
-      errorLastName.style.fontSize = "0.8rem";
-      errorLastName.style.marginTop = "10px";
-      lastName.style.border = "solid red 2px";
-      return false;
-  } else {
-      errorLastName.style.display = "none";
-      lastName.style.border = "solid #279e7a 3px";
-      return true;
-  }
-}
-
-//Validation form 
-function validate() {
-  //déclarer une variable
-  let isFormValidate = [];
-
-  isFormValidate.push(validateFirstName(firstName));
-  isFormValidate.push(validateLastName(lastName));
-  isFormValidate.push(validateEmail(eMail));
-  isFormValidate.push(validateMessage(message));
-  
-  if (!isFormValidate.includes(false)) {
-      form.style.display = "none";
-      confirmationValidation.style.display = "flex";
-  }
-}
-
-//Return console log
-/*
-submitFormEvent () {
-  document.getElementById("reserve").onsubmit = (e) => {
-    e.preventDefault();
-
-      const firstName = document.getElementById("first");
-      const lastName = document.getElementById("last");
-      const eMail = document.getElementById("email");
-      const message = document.getElementById("message");
-  
-
-      const user = {
-        firstName: firstName.value,
-        lastName: lastName.value,
-        eMail: eMail.value,
-        message: message.value,
-      };
-      console.log(user);
-    }
-}*/
 
 //Box photo
 function initLightbox() {
