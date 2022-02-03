@@ -14,7 +14,7 @@ class Photographer {
   render() {
     return `
        <a tabindex="12" href="photographer-page.html?id=${this.id}" class="linkPhotographer">
-        <div class="photoIdentite"><img src="medias/photographersIDPhotosb/${this.portrait}" alt="lien vers la page de ${this.name}"></div>
+        <div class="photoIdentite"><img src="img/photographersID/${this.portrait}" alt="lien vers la page de ${this.name}"></div>
         <h2 class="identite">${this.name}</h2>
         <p class="lieu">${this.city}, ${this.country}</p>
         <p class="tagline">${this.tagline} </p>
@@ -32,9 +32,8 @@ class Photographer {
 
     document.getElementById(
       "photoProfil"
-    ).innerHTML = `<img src="medias/photographersIDPhotosb/${this.portrait}" alt="photo de profil de ${this.name}">`;
+    ).innerHTML = `<img src="img/photographersID/${this.portrait}" alt="photo de profil de ${this.name}">`;
     document.getElementById("form-title-name").innerHTML = this.name;
     document.getElementById("scrollPrice").innerHTML = `${this.price}€/jour`;
-    this.displayTags();
   }
 }
