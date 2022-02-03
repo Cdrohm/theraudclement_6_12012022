@@ -52,7 +52,7 @@ function photographerHeader(photographer) {
   const tagline = document.createElement("p"); //quote
   tagline.id = "tagline";
 
-  profilePicture.src = "../photographersID/" + photographer.portrait;
+  profilePicture.src = "../img/photographersID/" + photographer.portrait;
   profilePicture.alt = photographer.name;
   photographerName.textContent = photographer.name;
   localisation.textContent = photographer.city + ", " + photographer.country;

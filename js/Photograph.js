@@ -9,11 +9,15 @@ class Photographer {
     this.portrait = data.portrait;
     this.id = data.id;
     }
-}
 
-//Load profil on photographer page
-return`
-    <a tabindex="15" href="photographer.html?id=${this.id}" class="">
-    <div class = "portrait"> <img src = "img/photographersID/${this.portrait}" alt = "Lien vers la page du photographe ${this.name}"></div>
-    
-    `
+    //Load profil on photographer page
+    return `
+        <a tabindex="15" href="photographer.html?id=${this.id}" class="">
+        <div class = "portrait"> <img src = "img/photographersID/${this.portrait}" alt = "Lien vers la page du photographe ${this.name}"></div>
+        <h2 class = "name"> ${this.name}</h2>
+        <p class = "place"> ${this.city}, ${this.country} </p>
+        <p class = "tagline> ${this.tagline} </p>
+        <p class = "price"> ${this.price} </p>
+        </a>
+        `
+}
