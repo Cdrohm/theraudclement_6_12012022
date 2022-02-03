@@ -69,6 +69,10 @@ body > * {
   z-index: 2;
 }
 
+input, textarea {
+  cursor: auto;
+}
+
 .slider-content img, .slider-content video {
   cursor: default;
 }
