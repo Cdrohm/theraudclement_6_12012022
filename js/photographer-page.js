@@ -1,5 +1,5 @@
 //Fetch
-fetch("/data/FishEyeData.json")
+fetch("./data/FishEyeData.json")
 .then(function (response) {
     console.log(response.json());
     if (!response.ok) {
