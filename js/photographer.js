@@ -176,80 +176,6 @@ function likesIncrement(photographerMedias) {
 
 //Dropdown menu phase 2 (ul)
 
-/*function displayFilterMenu (displayMediaList) {
-  const dropDownMenu = document.querySelector(".dropdownMenu");
-  const filterSelect = document.querySelector(".filter-select");
-  const filterSelectTrigger = document.querySelector(".filter-select_trigger");
-  const filterOptions = document.querySelector(".filter-option");
-  //first child select
-  const firstFilterOption = document.querySelector(".filter-select a:first-child");
-  //last child select
-  const lastFilterOption = document.querySelector(".filter-select a:lasty-child");
-
-  // filterOption array path onclick dropdown
-  for(const filter of filterOptions) {
-    filter.addEventListener("click", function(e)) {
-      e.preventDefault (); // if filter no selected, selected take 1st child
-      
-    };
-  } 
-};*/
-
-//Dropdown v3
-//Sort by Pop/Date/title
-/*
-displayReorderList(); {
-  let reorderAreaClosed = document.getElementById("sort-list_closed");
-  let reorderAreaOpen = document.getElementById("sort-list");
-  reorderAreaClosed.addEventListener("click", function (evt) {
-    reorderAreaClosed.style.display = "none";
-    reorderAreaOpen.style.display = "flex";
-  });
-  reorderAreaOpen.addEventListener("click", function (evt) {
-    reorderAreaClosed.style.display = "flex";
-    reorderAreaOpen.style.display = "none";
-  });
-}
-
-listenForReordering(); {
-  let elements = document.getElementsByClassName("sort-by");
-  let reorderAreaFirst = document.getElementById("text-choice-change");
-  for (let el of elements) {
-    el.addEventListener("click", (e) => {
-      let order = e.target.getAttribute("data-order");
-
-      this.order = order;
-      el.style.order == "0";
-
-      this.reorder(order);
-      reorderAreaFirst.textContent = e.target.textContent;
-    });
-  }
-}
-
-reorder(order); {
-  let methodName = "reorderBy" + ucfirst(order);
-  this[methodName]();
-  this.build(this.all);
-}
-reorderByPopularity(); {
-  this.all = this.all.sort((a, b) => {
-    return b.likes - a.likes;
-  });
-}
-reorderByDate() ;{
-  this.all = this.all.sort((a, b) => {
-    let dateA = new Date(a.date);
-    let dateB = new Date(b.date);
-
-    return dateB - dateA;
-  });
-}
-reorderByTitle(); {
-  this.all = this.all.sort((a, b) => {
-    return a.title > b.title ? 1 : -1;
-  });
-}*/
 
 
 //Dropdown menu - Sort-by
@@ -288,13 +214,6 @@ function sortBy(photographerMedias) {
 
   return photographerMedias;
 };
-
-//test select display when selected
-/*displayFilter (); {
-if(document.querySelector('#sort-by option[value="popularity"]:checked')) {
-  document.getElementById("#1").style.display = none;
-  }
-} */
 
 //Form Modal
 function formModal(photographer) {
