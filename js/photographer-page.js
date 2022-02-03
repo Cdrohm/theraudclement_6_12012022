@@ -1,7 +1,5 @@
-import { getMedias } from "./api";
-
 //Fetch
-fetch("./data/FishEyeData.json")
+fetch("/data/FishEyeData.json")
 .then(function (response) {
     if (!response.ok) {
       throw new Error("HTTP error, status = " + response.status);
