@@ -10,3 +10,8 @@ class Photographer {
     this.id = data.id;
     }
 }
+
+//Load profil on photographer page
+return`
+    <a tabindex="15" href="
+    `
