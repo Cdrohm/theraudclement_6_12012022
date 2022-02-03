@@ -14,7 +14,6 @@ fetch("./data/FishEyeData.json")
     let factory = new MediaFactory();
     let medias = getMedias(json.media);
     let photographer = new Photographer(profil);
-
     photographer.displayProfil();
 
     medias.forEach((item) => {
