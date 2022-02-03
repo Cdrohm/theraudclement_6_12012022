@@ -393,3 +393,85 @@ nav {
   padding: 2rem 0 0 0;
   width: auto;
 }*/
+
+//Dropdown menu
+.sort {
+  margin-left: 3.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#selected-filter {
+  list-style: none;
+}
+#sort-list {
+  padding: 1rem 0;
+  text-align: left;
+}
+#sort-list li {
+  margin-left: -2.5rem;
+  padding: 0.5rem 0;
+}
+.popularity-btn {
+  width: 11rem;
+  color: white;
+  left: 12rem;
+  top: 22.5rem;
+  padding: 1rem 0 1rem 1rem;
+  font-weight: 900;
+  font-size: 1.3rem;
+  background-color: $color-primary;
+  border-style: none;
+  border-radius: 5px;
+  min-height: 2rem;
+  position: absolute;  
+}
+.popularity-btn-opened {
+  z-index: 9;
+  text-align: left;
+  display: none;
+}
+.popularity-btn-opened ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sort-by-date,.sort-by-title {
+  border-top: solid 1px white;
+}
+#text-choice {
+  display: flex;
+  justify-content: space-between;
+}
+#popularity-btn {
+  display: flex;
+}
+.fa-chevron-down {
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+}
+.fa-chevron-up {
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+  color: white;
+}
+.sort-list_closed nav {
+  padding: 0;
+}
+.sort-list_closed:hover,
+.sort-list_closed:focus {
+  background-color: $color-secondary;
+  color: black;
+}
+.sort-by button {
+  background-color: $color-primary;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: none;
+}
+.sort-by button:hover,.sort-by button:focus {
+  background-color: $color-secondary;
+  color: black;
+}

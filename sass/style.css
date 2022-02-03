@@ -18,59 +18,213 @@ body > * {
   margin: auto;
 }
 
-#artist #contact {
-  position: fixed;
-  bottom: 25px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-color: #901C1C;
-  color: #fff;
-  padding: 5px 18px 7px 18px;
-  border-radius: 5px;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  z-index: 2;
-}
+/*#artist {
+  #contact {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $color-primary;
+    color: #fff;
+    padding: 5px 18px 7px 18px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
 
-#artist #contact:hover, #artist #contact:focus {
-  background-color: #DB8876;
-  color: #000;
-}
+    &:hover,
+    &:focus {
+      background-color: $color-secondary;
+      color: #000;
+    }
 
-@media all and (min-width: 992px) {
-  #artist #contact {
-    position: absolute;
-    width: 170px;
-    height: 69px;
-    font-size: 20px;
-    padding: 0;
-    bottom: 25%;
-    left: 60%;
+    @media all and (min-width: $breakpoint-desktop) {
+      position: absolute;
+      width: 170px;
+      height: 69px;
+      font-size: 20px;
+      padding: 0;
+      bottom: 25%;
+      left: 60%;
+    }
   }
 }
 
+//Dropdown btn for ul
 .button {
   position: fixed;
-  bottom: 25px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-color: #901C1C;
-  color: #fff;
-  padding: 5px 18px 7px 18px;
-  border-radius: 5px;
-  font-size: 18px;
-  font-weight: bold;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $color-primary;
+    color: #fff;
+    padding: 5px 18px 7px 18px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}*/
+.contactButton {
+  height: 1rem;
   border: none;
-  cursor: pointer;
-  z-index: 2;
+  margin-top: 1.8rem;
+  margin-right: 1rem;
+  padding: 1.5rem 1rem;
+  line-height: 0.2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  background-color: #901C1C;
+  border-radius: 5px;
+}
+
+.contactButton:hover, .contactButton:focus {
+  background-color: #DB8876;
+  color: black;
 }
 
 input, textarea {
   cursor: auto;
+}
+
+.fiche {
+  position: relative;
+}
+
+.bground {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  z-index: 9;
+  top: -10%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form {
+  position: absolute;
+  z-index: 1;
+  overflow: auto;
+  top: 5%;
+  width: 50%;
+  max-width: 1000px;
+  background-color: #DB8876;
+  padding: 2rem;
+  margin-left: 22%;
+  border-radius: 5px;
+}
+
+.form a {
+  text-decoration: none;
+}
+
+#form-title, #form-title-name {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-left: 0rem;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+#form-title-name {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 11px;
+}
+
+.text-control {
+  margin: 0;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 2rem;
+  height: 48px;
+  padding: 8px;
+}
+
+.error {
+  font-size: 1rem;
+  background-color: honeydew;
+  color: #e60000;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+}
+
+.erreur-input {
+  margin: 0;
+  padding: 8px;
+  width: 100%;
+  height: 48px;
+  border: 0.8px solid #e60000;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+#message {
+  min-height: 10rem;
+}
+
+#close {
+  width: 40px;
+  height: 40px;
+  padding: 0%;
+  margin: 0%;
+  cursor: pointer;
+  background-color: #DB8876;
+  border: none;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+#close:hover, #close:focus {
+  background-color: #901C1C;
+}
+
+#close img {
+  width: 40px;
+}
+
+.btn-submit {
+  background: #901C1C;
+  color: #fff;
+  display: block;
+  margin: 2rem 0;
+  border-radius: 7px;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  width: 6.5rem;
+  cursor: pointer;
+}
+
+#btn-envoi:hover, #btn-envoi:focus {
+  background: #901C1C;
+  color: black;
+  border: solid 1.5px #901C1C;
+}
+
+.btn-submit_off {
+  background: lightgrey;
+  cursor: not-allowed;
 }
 
 .slider-content img, .slider-content video {
@@ -462,6 +616,108 @@ nav {
   padding: 2rem 0 0 0;
   width: auto;
 }*/
+.sort {
+  margin-left: 3.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#selected-filter {
+  list-style: none;
+}
+
+#sort-list {
+  padding: 1rem 0;
+  text-align: left;
+}
+
+#sort-list li {
+  margin-left: -2.5rem;
+  padding: 0.5rem 0;
+}
+
+.popularity-btn {
+  width: 11rem;
+  color: white;
+  left: 12rem;
+  top: 22.5rem;
+  padding: 1rem 0 1rem 1rem;
+  font-weight: 900;
+  font-size: 1.3rem;
+  background-color: #901C1C;
+  border-style: none;
+  border-radius: 5px;
+  min-height: 2rem;
+  position: absolute;
+}
+
+.popularity-btn-opened {
+  z-index: 9;
+  text-align: left;
+  display: none;
+}
+
+.popularity-btn-opened ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sort-by-date, .sort-by-title {
+  border-top: solid 1px white;
+}
+
+#text-choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#popularity-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fa-chevron-down {
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+}
+
+.fa-chevron-up {
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+  color: white;
+}
+
+.sort-list_closed nav {
+  padding: 0;
+}
+
+.sort-list_closed:hover,
+.sort-list_closed:focus {
+  background-color: #DB8876;
+  color: black;
+}
+
+.sort-by button {
+  background-color: #901C1C;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: none;
+}
+
+.sort-by button:hover, .sort-by button:focus {
+  background-color: #DB8876;
+  color: black;
+}
+
 .content-link {
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;

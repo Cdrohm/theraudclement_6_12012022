@@ -2,3 +2,118 @@
 input,textarea {
     cursor: auto;
   }
+
+.fiche {
+position: relative;
+}
+.bground {
+background-color: rgba(255, 255, 255, 0.9);
+position: absolute;
+z-index: 9;
+top: -10%;
+right: 0;
+bottom: 0;
+left: 0;
+display: none;
+justify-content: center;
+align-items: center;
+}
+.form {
+position: absolute;
+z-index: 1;
+overflow: auto;
+top: 5%;
+width: 50%;
+max-width: 1000px;
+background-color: $color-secondary;
+padding: 2rem;
+margin-left: 22%;
+border-radius: 5px;
+}
+.form a {
+text-decoration: none;
+}
+#form-title,#form-title-name {
+font-size: 2rem;
+font-weight: 900;
+margin-left: 0rem;
+text-align: left;
+padding: 0;
+margin: 0;
+}
+#form-title-name {
+margin-bottom: 1.5rem;
+}
+label {
+font-size: 2rem;
+display: inline-block;
+margin-bottom: 11px;
+}
+.text-control {
+margin: 0;
+width: 100%;
+border-radius: 5px;
+font-size: 2rem;
+height: 48px;
+padding: 8px;
+}
+.error {
+font-size: 1rem;
+background-color: honeydew;
+color: #e60000;
+}
+input {
+border: none;
+border-radius: 5px;
+}
+.erreur-input {
+margin: 0;
+padding: 8px;
+width: 100%;
+height: 48px;
+border: 0.8px solid #e60000;
+border-radius: 8px;
+font-size: 20px;
+}
+#message {
+min-height: 10rem;
+}
+#close {
+width: 40px;
+height: 40px;
+padding: 0%;
+margin: 0%;
+cursor: pointer;
+background-color: $color-secondary;
+border: none;
+position: absolute;
+right: 15px;
+top: 15px;
+}
+#close:hover,#close:focus {
+background-color: $color-primary;
+}
+#close img {
+width: 40px;
+}
+.btn-submit {
+background: $color-primary;
+color: #fff;
+display: block;
+margin: 2rem 0;
+border-radius: 7px;
+padding: 1rem 2rem;
+font-size: 1.4rem;
+font-weight: 600;
+width: 6.5rem;
+cursor: pointer;
+}
+#btn-envoi:hover,#btn-envoi:focus {
+background: $color-primary;
+color: black;
+border: solid 1.5px $color-primary;
+}
+.btn-submit_off {
+background: lightgrey;
+cursor: not-allowed;
+}

@@ -1,5 +1,5 @@
 // Contact button on artist's page
-#artist {
+/*#artist {
   #contact {
     position: fixed;
     bottom: 25px;
@@ -48,4 +48,23 @@
     border: none;
     cursor: pointer;
     z-index: 2;
+}*/
+
+//Button
+.contactButton {
+  height: 1rem;
+  border: none;
+  margin-top: 1.8rem;
+  margin-right: 1rem;
+  padding: 1.5rem 1rem;
+  line-height: 0.2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  background-color: $color-primary;
+  border-radius: 5px;
+}
+.contactButton:hover,.contactButton:focus {
+  background-color: $color-secondary;
+  color: black;
 }
