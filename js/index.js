@@ -1,7 +1,7 @@
 //Loading data accueil / Fetch
 fetch("./data/FishEyeData.json")
   .then(function (response) {
-    
+   // console.log((response));
     if (!response.ok) {
       throw new Error("HTTP error, status = " + response.status);
     }
