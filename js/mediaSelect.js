@@ -1,4 +1,4 @@
-//Photograph Lis
+//Photograph List
 class List {
     constructor() {
       this.all = [];
