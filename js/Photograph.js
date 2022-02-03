@@ -13,5 +13,7 @@ class Photographer {
 
 //Load profil on photographer page
 return`
-    <a tabindex="15" href="
+    <a tabindex="15" href="photographer.html?id=${this.id}" class="">
+    <div class = "portrait"> <img src = "img/photographersID/${this.portrait}" alt = "Lien vers la page du photographe ${this.name}"></div>
+    
     `
