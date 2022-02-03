@@ -1,0 +1,110 @@
+//Photograph
+.textProfil {
+    display: flex;
+    flex-direction: column;
+  }
+#nameProfil h1 {
+font-size: 3rem;
+color: $color-secondary;
+margin: 1rem 0;
+}
+#locationProfil h2 {
+color: $color-primary;
+font-size: 1.5rem;
+font-weight: 200;
+margin-bottom: 0;
+margin-top: 0;
+padding: 0;
+}
+#headerFiche {
+margin-left: 5rem;
+}
+
+//Photograph card
+#medias figure {
+    width: 21rem;
+    height: 21rem;
+    margin: 2rem;
+    padding: 0;
+    background-color: black;
+    border-radius: 5px;
+  }
+#medias figcaption {
+font-size: 18px;
+color: $color-primary;
+font-weight: 400;
+background-color: white;
+padding: 0.5rem 0;
+margin-bottom: 0.2rem;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+figcaption i {
+color: $color-secondary;
+}
+.heart {
+color:$color-primary;
+}
+.mediaTitle {
+margin: 0;
+font-size: 1.3rem;
+font-weight: 400;
+}
+#medias img {
+width: 21rem;
+height: 21rem;
+object-fit: cover;
+border-radius: 5px;
+}
+#medias img:hover,
+#medias img:focus,
+#medias video:hover,
+#medias video:focus {
+border: solid 4px $color-tertiary-font;
+}
+video {
+width: 21rem;
+height: 21rem;
+padding: 0;
+background-color:$color-tertiary-font;
+}
+#medias {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+margin-top: 2rem;
+}
+
+//Scroll
+.scrollProfile {
+    display: flex;
+    color: black;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    position: fixed;
+    bottom: 1%;
+    right: 2%;
+    background-color: $color-secondary;
+    border-radius: 5px;
+}
+#scrollPrice {
+margin-left: 2rem;
+}
+#scrollPrice:hover,#scrollPrice:focus {
+transform: scale(1);
+    box-shadow: 0 0 3px 2px #F2F2F2;
+}
+.scroll {
+position: fixed;
+display: none;
+background-color: $color-secondary;
+padding: 0.1rem 0.5rem;
+border-radius: 5px;
+top: 2%;
+left: 45%;
+text-decoration: none;
+color: black;
+font-weight: 600;
+}
