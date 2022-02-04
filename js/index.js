@@ -1,5 +1,5 @@
 //Loading data accueil / Fetch
-fetch("./data/FishEyeData.json")
+fetch("../data/FishEyeData.json")
   .then(function (response) {
    // console.log((response));
     if (!response.ok) {

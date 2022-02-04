@@ -1,14 +1,13 @@
-body {
-
-    max-width: 1440px;
-    margin: auto;
-    
-    > * {
-    margin : 42px 5% 0 5%;
-    cursor: default;
-    }
-}
-
+html{
+    font-size: 62,5%;
+  }
+  * {
+    font-family: DM Sans;
+    cursor: pointer;
+  }
+  /*.linkPhotographer,.identite,img,video,button,.sort li,#close-slider,.arrow,.scroll {
+    cursor: pointer;
+  }*/
 .container {
     max-width: 1440px;
     margin: auto;

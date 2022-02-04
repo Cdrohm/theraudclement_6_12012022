@@ -1,8 +1,23 @@
 //Photograph
-.textProfil {
-    display: flex;
-    flex-direction: column;
+#photoProfil img {
+    cursor: default
   }
+#mainFiche {
+    margin-bottom: 5rem;
+  }
+  .profil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 4rem 5rem 3rem 5rem;
+    background-color: rgba(243, 244, 246, 0.5);
+    padding: 2rem;
+    border-radius: 5px;
+  }
+.textProfil {
+display: flex;
+flex-direction: column;
+}
 #nameProfil h1 {
 font-size: 3rem;
 color: $color-secondary;
@@ -108,3 +123,23 @@ text-decoration: none;
 color: black;
 font-weight: 600;
 }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 2rem 0 0 0;
+    width: auto;
+  }
+  nav a {
+    height: 1rem;
+    padding: 0 0.2rem;
+    margin: 0 0.3rem;
+    color: #901c1c;
+    font-size: 12px;
+    border-radius: 11px;
+    text-decoration: none;
+    border: 0.5px solid #c4c4c4;
+  }
