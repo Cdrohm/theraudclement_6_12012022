@@ -17,7 +17,7 @@ class Video {
       <figure >
         
           <video  tabindex="0" class="diapo" id="${this.id}" title= "lancer le diaporama à partir de la video de titre ${this.title}">
-          <source src="medias/${this.photographerId}/${this.src}" type="video/mp4"  >
+          <source src="img/photos/${this.photographerId}/${this.src}" type="video/mp4"  >
           </video>
         
         <figcaption>

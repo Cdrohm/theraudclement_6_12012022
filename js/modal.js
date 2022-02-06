@@ -1,14 +1,15 @@
 //DOM
 let modalBg = document.querySelector(".bground");
-let validationBtn = document.querySelector("#btn-submit");
-let launchBtn = document.querySelector("#contact");
+let validationBtn = document.querySelector("#btn-envoi");
+let launchBtn = document.querySelector("#contactButton");
 let closeBtn = document.querySelector("#close");
 
 //FORM var
-let firstName = document.querySelector("first");
-let lastName = document.querySelector("last");
-let mail = document.querySelector("email");
-let message = document.querySelector("message");
+let firstName = document.querySelector("#first");
+//console.log(first);
+let lastName = document.querySelector("#last");
+let mail = document.querySelector("#email");
+let message = document.querySelector("#message");
 
 //FORM error
 let errorFirstName = document.querySelector("missfirst");
@@ -21,6 +22,7 @@ let mailRegex =
   /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 //Event launch
+console.log(launchBtn);
 launchBtn.addEventListener("click", launchModal);
 
 //Event close

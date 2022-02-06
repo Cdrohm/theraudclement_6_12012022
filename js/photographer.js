@@ -24,6 +24,7 @@ class Photographer {
 
   //Photograph profil
   displayProfil() {
+    
     document.getElementById("nameProfil").innerHTML = `${this.name}`;
     document.getElementById(
       "locationProfil"

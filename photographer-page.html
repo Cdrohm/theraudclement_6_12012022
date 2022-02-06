@@ -1,248 +1,262 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
-      <link rel="shortcut icon" href="#">
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="../sass/style.css" />
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-      <!--Onglet icon-->
-      <link rel="shortcut icon" href="https://img.icons8.com/ios/50/000000/camera--v3.png" />
-      <title>FishEye - Photographes</title>
-  
+    <link rel="shortcut icon" href="#" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../sass/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <!--Onglet icon-->
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/ios/50/000000/camera--v3.png"
+    />
+    <title>FishEye - Photographes</title>
   </head>
   <body>
     <header id="headerFiche">
       <!--Back home-->
-      <a tabindex="1" href="index.html" id="logo" aria-label="Lien vers la page d'accueil Fisheye">
-          <img src="/img/logo/logo.svg" alt="FishEye Home page">
+      <a
+        tabindex="1"
+        href="index.html"
+        id="logo"
+        aria-label="Lien vers la page d'accueil Fisheye"
+      >
+        <img src="/img/logo/logo.svg" alt="FishEye Home page" />
       </a>
-        <div class="container">
-          </header>
-    
-          <!--SLIDER-->
-          <div id="slider" class="slider">
-            <div id="slider-all">
-              <div tabindex="5" id="previous" class="arrow">
-                <img
-                  class="arrow"
-                  src="/img/logo/left.png"
-                  alt="Passer à la diapo précédente"/>
+    </header>
+    <div class="container">
+      <!--SLIDER-->
+      <div id="slider" class="slider">
+        <div id="slider-all">
+          <div tabindex="5" id="previous" class="arrow">
+            <img
+              class="arrow"
+              src="/img/logo/left.png"
+              alt="Passer à la diapo précédente"
+            />
+          </div>
+          <div class="close-slider">
+            <div id="message-nav">
+              <div id="message-nav-txt">
+                Utilisez les flèches "droite" et "gauche" pour naviguer entre
+                les diapos
               </div>
-              <div class="close-slider">
-                <div id="message-nav">
-                  <div id="message-nav-txt">
-                    Utilisez les flèches "droite" et "gauche" pour naviguer entre
-                    les diapos
-                  </div>
-                  <div class="slider-content"></div>
-                </div>
-                <div id="close-slider" tabindex="6">
-                  <img
-                    class="cross"
-                    src="/img/logo/close.png"
-                    alt="Fermer le diaporama"/>
-                </div>
-              </div>
-              <div>
-                <div id="next" class="arrow" tabindex="5">
-                  <img
-                    src="/img/logo/right.png"
-                    alt="Passer à la diapo suivante"/>
-                </div>
-              </div>
+              <div class="slider-content"></div>
+            </div>
+            <div id="close-slider" tabindex="6">
+              <img
+                class="cross"
+                src="/img/logo/close.png"
+                alt="Fermer le diaporama"
+              />
             </div>
           </div>
-    
-          <!--FORM Contact-->
-          <div class="fiche">
-            <div class="bground">
-              <div class="form">
-                <div class="form-header">
-                  <h2 id="form-title">Contactez-moi</h2>
-                  <p id="form-title-name"></p>
-                  <button tabindex="0" id="close">
-                    <img
-                      src="/img/logo/close-modal.png"
-                      alt="Fermer le formulaire de contact"/>
-                  </button>
-                </div>
-    
-                <div class="modal-body">
-                  <form id="form" name="contact" action="index.html" method="get">
-                    <div class="form-data">
-                      <label for="first">Prénom</label>
-                      <br>
-                      <input
-                        tabindex="4"
-                        class="text-control"
-                        type="text"
-                        id="first"
-                        name="first"
-                        required="required"
-                        minlength="2"
-                        placeholder="John"/>
-                        <br>
-                      <span class="error" id="missfirst"></span>
-                    </div>
-    
-                    <div class="form-data">
-                      <label for="last">Nom</label>
-                      <br>
-                      <input
-                        tabindex="4"
-                        class="text-control"
-                        type="text"
-                        id="last"
-                        name="last"
-                        required="required"
-                        minlength="5"
-                        placeholder="Doe"/>
-                       <br>
-                      <span class="error" id="misslast"></span>
-                    </div>
-
-                    <div class="form-data">
-                      <label for="email">E-mail</label>
-                      <br>
-                      <input
-                        tabindex="4"
-                        class="text-control"
-                        type="email"
-                        id="email"
-                        name="email"
-                        required="required"
-                        placeholder="John.Doe@truc.com"/> 
-                        <br>
-                      <span class="error" id="missemail"></span>
-                    </div>
-    
-                    <div class="form-data">
-                      <label for="message">Votre message</label>
-                      <br>
-                      <textarea
-                        tabindex="4"
-                        class="text-control"
-                        id="message"
-                        name="message"
-                        required="required"
-                        minlength="5"
-                        placeholder="Votre message"
-                      ></textarea>
-                      <br>
-                      <span class="error" id="missmessage"></span>
-    
-                      <a
-                        href="#"
-                        class="button btn-submit btn-submit_off"
-                        id="btn-envoi"
-                        tabindex="4">
-                        Envoyer
-                      </a>
-                    </div>
-                  </form>
-                </div>
-              </div>
+          <div>
+            <div id="next" class="arrow" tabindex="5">
+              <img src="/img/logo/right.png" alt="Passer à la diapo suivante" />
             </div>
-    
-            
-
-            <main>
-
-              <!--Photograph ID-->
-              <div id="mainFiche">
-                <section class="profil">
-                  <div class="textProfil">
-                    <h1 id="nameProfil"></h1>
-                    <span id="locationProfil"></span>
-                    <p id="taglineProfil"></p>
-                    <div id="tagProfil"></div>
-                  </div>
-                  <button tabindex="0" class="contactButton" id="contactButton">
-                    Contactez-moi
-                  </button>
-                  <div id="photoProfil"></div>
-                </section>
-              </div>
-    
-              <!--Dropdown sort-by-->
-              <div class="sort">
-                <span id="sort-text">Triez-par</span>
-                <button
-                  tabindex="1"
-                  id="sort-list_closed"
-                  class="popularity-btn sort-list_closed">
-                  <span id="selected-filter" class="category category-closed">
-                    <span id="text-choice">
-                      <span id="text-choice-change">Popularité</span>
-                      <span><i class="fas fa-chevron-down"></i></span>
-                    </span>
-                  </span>
-                </button>
-                <nav
-                  id="sort-list"
-                  class="sort-by popularity-btn popularity-btn-opened">
-                  <ul>
-                    <li>
-                      <button
-                        tabindex="1"
-                        id="popularity-btn"
-                        class="sort-by_popu"
-                        data-order="popularity">
-                        Popularité
-                        <span><i class="fas fa-chevron-up"></i></span>
-                      </button>
-                    </li>
-                    <li>
-                      <button
-                        tabindex="1"
-                        id="date-btn"
-                        class="sort-by sort-by_date"
-                        data-order="date">
-                        Date
-                      </button>
-                    </li>
-    
-                    <li>
-                      <button
-                        tabindex="1"
-                        id="title-btn"
-                        class="sort-by sort-by_title"
-                        data-order="title">
-                        Titre
-                      </button>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-    
-              <!--Photograph Medias-->
-              <section id="medias">
-              </section>
-    
-              <!--Popup likes-->
-              <div class="scrollProfile">
-                <div>
-                  <span id="scrollLikes"></span> <i class="fas fa-heart"></i>
-                </div>
-                <div id="scrollPrice">test</div>
-              </div>
-            </main>
           </div>
-    
-          <script src="/js/photographer-page.js"></script>
-          <script src="/js/modal.js"></script>
-          <script src="/js/photographer.js"></script>
-          <script src="/js/variables.js"></script>
-          <script src="/js/diapo.js"></script>
-          <script src="/js/mediaList.js"></script>
-          <script src="/js/mediaFactory.js"></script>
-          <script src="/js/image.js"></script>
-          <script src="/js/video.js"></script>
-          
         </div>
-      </body>
+      </div>
+
+      <!--FORM Contact-->
+      <div class="fiche">
+        <div class="bground">
+          <div class="form">
+            <div class="form-header">
+              <h2 id="form-title">Contactez-moi</h2>
+              <p id="form-title-name"></p>
+              <button tabindex="0" id="close">
+                <img
+                  src="/img/logo/close-modal.png"
+                  alt="Fermer le formulaire de contact"
+                />
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <form id="form" name="contact" action="index.html" method="get">
+                <div class="form-data">
+                  <label for="first">Prénom</label>
+                  <br />
+                  <input
+                    tabindex="4"
+                    class="text-control"
+                    type="text"
+                    id="first"
+                    name="first"
+                    required="required"
+                    minlength="2"
+                    placeholder="John"
+                  />
+                  <br />
+                  <span class="error" id="missfirst"></span>
+                </div>
+
+                <div class="form-data">
+                  <label for="last">Nom</label>
+                  <br />
+                  <input
+                    tabindex="4"
+                    class="text-control"
+                    type="text"
+                    id="last"
+                    name="last"
+                    required="required"
+                    minlength="5"
+                    placeholder="Doe"
+                  />
+                  <br />
+                  <span class="error" id="misslast"></span>
+                </div>
+
+                <div class="form-data">
+                  <label for="email">E-mail</label>
+                  <br />
+                  <input
+                    tabindex="4"
+                    class="text-control"
+                    type="email"
+                    id="email"
+                    name="email"
+                    required="required"
+                    placeholder="John.Doe@truc.com"
+                  />
+                  <br />
+                  <span class="error" id="missemail"></span>
+                </div>
+
+                <div class="form-data">
+                  <label for="message">Votre message</label>
+                  <br />
+                  <textarea
+                    tabindex="4"
+                    class="text-control"
+                    id="message"
+                    name="message"
+                    required="required"
+                    minlength="5"
+                    placeholder="Votre message"
+                  ></textarea>
+                  <br />
+                  <span class="error" id="missmessage"></span>
+
+                  <a
+                    href="#"
+                    class="button btn-submit btn-submit_off"
+                    id="btn-envoi"
+                    tabindex="4"
+                  >
+                    Envoyer
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <main>
+          <!--Photograph ID-->
+          <div id="mainFiche">
+            <section class="profil">
+              <div class="textProfil">
+                <h1 id="nameProfil"></h1>
+                <span id="locationProfil"></span>
+                <p id="taglineProfil"></p>
+                <div id="tagProfil"></div>
+              </div>
+              <button tabindex="0" class="contactButton" id="contactButton">
+                Contactez-moi
+              </button>
+              <div id="photoProfil"></div>
+            </section>
+          </div>
+
+          <!--Dropdown sort-by-->
+          <div class="sort">
+            <span id="sort-text">Triez-par</span>
+            <button
+              tabindex="1"
+              id="sort-list_closed"
+              class="popularity-btn sort-list_closed"
+            >
+              <span id="selected-filter" class="category category-closed">
+                <span id="text-choice">
+                  <span id="text-choice-change">Popularité</span>
+                  <span><i class="fas fa-chevron-down"></i></span>
+                </span>
+              </span>
+            </button>
+            <nav
+              id="sort-list"
+              class="sort-by popularity-btn popularity-btn-opened"
+            >
+              <ul>
+                <li>
+                  <button
+                    tabindex="1"
+                    id="popularity-btn"
+                    class="sort-by_popu"
+                    data-order="popularity"
+                  >
+                    Popularité
+                    <span><i class="fas fa-chevron-up"></i></span>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    tabindex="1"
+                    id="date-btn"
+                    class="sort-by sort-by_date"
+                    data-order="date"
+                  >
+                    Date
+                  </button>
+                </li>
+
+                <li>
+                  <button
+                    tabindex="1"
+                    id="title-btn"
+                    class="sort-by sort-by_title"
+                    data-order="title"
+                  >
+                    Titre
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!--Photograph Medias-->
+          <section id="medias"></section>
+
+          <!--Popup likes-->
+          <div class="scrollProfile">
+            <div>
+              <span id="scrollLikes"></span> <i class="fas fa-heart"></i>
+            </div>
+            <div id="scrollPrice">test</div>
+          </div>
+        </main>
+      </div>
+
+      <script src="/js/photographer-page.js"></script>
+      <script src="/js/modal.js"></script>
+      <script src="/js/photographer.js"></script>
+      <script src="/js/variables.js"></script>
+      <script src="/js/diapo.js"></script>
+      <script src="/js/mediaList.js"></script>
+      <script src="/js/mediaFactory.js"></script>
+      <script src="/js/image.js"></script>
+      <script src="/js/video.js"></script>
+    </div>
+  </body>
 </html>

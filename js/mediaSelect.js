@@ -2,7 +2,6 @@
 class List {
     constructor() {
       this.all = [];
-      this.activeTags = [];
     }
     add(photographer) {
       this.all.push(photographer);
@@ -10,6 +9,7 @@ class List {
   
     //HTML => create photograph page
     displayPhotographers(photographes) {
+      console.log(photographes);
       let html = "";
   
       for (let i = 0; i < photographes.length; i++) {

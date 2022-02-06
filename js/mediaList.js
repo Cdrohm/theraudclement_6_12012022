@@ -63,7 +63,9 @@ class MediaList {
     }
   
     reorder(order) {
+     // console.log(order);
       let methodName = "reorderBy" + ucfirst(order);
+      
       this[methodName]();
       this.build(this.all);
     }

@@ -15,7 +15,7 @@ class Image {
     render() {
       return `
       <figure>
-       <img tabindex="0" src="medias/${this.photographerId}b/${this.src}" alt="lancer le diaporama à partir de la photo de titre ${this.title}" class="diapo" id="${this.id}"/>
+       <img tabindex="0" src="img/photos/${this.photographerId}/${this.src}" alt="lancer le diaporama à partir de la photo de titre ${this.title}" class="diapo" id="${this.id}"/>
        <figcaption>
         <h2 class="mediaTitle">${this.title}</h2>
         <div> <span class="mediaLikes" data-id="${this.id}" >${this.likes}</span>
@@ -28,7 +28,7 @@ class Image {
     renderSlide() {
       return `
       <figure >
-       <img src="medias/${this.photographerId}b/${this.src}" alt="${this.alt}" class="diapo" id="${this.id}" />
+       <img src="img/photos/${this.photographerId}/${this.src}" alt="${this.alt}" class="diapo" id="${this.id}" />
        <figcaption>
         <h2 class="mediaTitle">${this.title}</h2>
        </figcaption>
