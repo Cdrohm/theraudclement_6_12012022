@@ -6,23 +6,21 @@ let closeBtn = document.querySelector("#close");
 
 //FORM var
 let firstName = document.querySelector("#first");
-//console.log(first);
 let lastName = document.querySelector("#last");
 let mail = document.querySelector("#email");
 let message = document.querySelector("#message");
 
 //FORM error
-let errorFirstName = document.querySelector("missfirst");
-let errorLastName = document.querySelector("misslast");
-let errorMail = document.querySelector("missemail");
-let errorMessage = document.querySelector("missmessage");
+let errorFirstName = document.querySelector("#missfirst");
+let errorLastName = document.querySelector("#misslast");
+let errorMail = document.querySelector("#missemail");
+let errorMessage = document.querySelector("#missmessage");
 
 //Regex email
 let mailRegex =
   /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 //Event launch
-console.log(launchBtn);
 launchBtn.addEventListener("click", launchModal);
 
 //Event close
@@ -69,7 +67,7 @@ function validFirstName(e) {
         return false;
 
     } else {
-        error.firstName.textContent = " ";
+        errorFirstName.textContent = " ";
         firstName.classList.replace("error-input", "text-control");
         return true;
     }
@@ -112,7 +110,7 @@ function validEmail(e) {
         mail.classList.replace("text-control", "error-input");
         return false;
 
-    } else if (!mailRegex.value.match(mailRegex)) {
+    } else if (!mail.value.match(mailRegex)) {
         e.preventDefault();
         errorMail.textContent = "Veuillez renseigner une adresse mail valide.";
         mail.classList.replace("text-control", "error-input");

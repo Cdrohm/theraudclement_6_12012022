@@ -443,6 +443,23 @@ h1 {
           justify-content: center;
 }
 
+.lieu {
+  color: #901C1C;
+  font-size: 13px;
+  margin: 0 0 3px 0;
+}
+
+.tagline {
+  font-size: 10px;
+  margin: 0 0 3px 0;
+}
+
+.prix {
+  font-size: 9px;
+  color: #757575;
+  margin: 3px 0 50px 0;
+}
+
 #photoProfil img {
   cursor: default;
 }

@@ -34,7 +34,7 @@ class Video {
       return `
       <figure>
         <video controls autoplay title= " ${this.alt}">
-          <source src="medias/${this.photographerId}/${this.src}" type="video/mp4">
+          <source src="img/photos/${this.photographerId}/${this.src}" type="video/mp4">
         </video>
         <figcaption>
         <h2>${this.title}</h2>

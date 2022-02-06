@@ -53,11 +53,14 @@ class MediaList {
         el.addEventListener("click", (e) => {
           let order = e.target.getAttribute("data-order");
   
-          this.order = order;
-          el.style.order == "0";
-  
-          this.reorder(order);
-          reorderAreaFirst.textContent = e.target.textContent;
+          if(order) {
+            this.order = order;
+            el.style.order == "0";
+    
+            this.reorder(order);
+            reorderAreaFirst.textContent = e.target.textContent;
+          }
+          
         });
       }
     }
@@ -93,6 +96,7 @@ class MediaList {
         return a.title > b.title ? 1 : -1;
       });
     }
+  
   
     //Likes counter (popup) + likes/photograph
     increaseMediaLikes() {
