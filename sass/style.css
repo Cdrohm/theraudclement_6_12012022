@@ -314,6 +314,8 @@ input {
 
 #selected-filter {
   list-style: none;
+  display: inline-block;
+  width: 100%;
 }
 
 #sort-list {
@@ -322,25 +324,24 @@ input {
 }
 
 #sort-list li {
-  margin-left: -2.5rem;
   padding: 0.5rem 0;
   border-top: 1px solid white;
-  width: 200%;
+}
+
+#sort-list li:first-child {
+  border-top: none;
 }
 
 .popularity-btn {
   width: 11rem;
   color: white;
-  left: 12rem;
-  top: 22.5rem;
-  padding: 1rem 0 1rem 1rem;
+  padding: 1rem;
   font-weight: 900;
   font-size: 1.3rem;
   background-color: #901C1C;
   border-style: none;
   border-radius: 5px;
   min-height: 2rem;
-  position: absolute;
 }
 
 .popularity-btn-opened {
@@ -353,6 +354,7 @@ input {
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 100%;
 }
 
 .sort-by-date, .sort-by-title {
@@ -366,6 +368,7 @@ input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 #popularity-btn {
@@ -374,16 +377,7 @@ input {
   display: flex;
 }
 
-.fa-chevron-down {
-  position: absolute;
-  top: 1.2rem;
-  right: 1rem;
-}
-
 .fa-chevron-up {
-  position: absolute;
-  right: 1rem;
-  top: 1.5rem;
   color: white;
 }
 
@@ -408,6 +402,33 @@ input {
 .sort-by button:hover, .sort-by button:focus {
   background-color: #DB8876;
   color: black;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 2rem 0 0 0;
+  width: auto;
+}
+
+nav a {
+  height: 1rem;
+  padding: 0 0.2rem;
+  margin: 0 0.3rem;
+  color: #901c1c;
+  font-size: 12px;
+  border-radius: 11px;
+  text-decoration: none;
+  border: 0.5px solid #c4c4c4;
 }
 
 #logo img {
@@ -459,6 +480,14 @@ h1 {
   }
 }
 
+.main .main img {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 14rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .main .photoIdentite {
   height: 200px;
   width: 200px;
@@ -484,6 +513,11 @@ h1 {
 
 #photoProfil img {
   cursor: default;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 14rem;
+  height: 14rem;
+  border-radius: 14rem;
 }
 
 #mainFiche {
@@ -654,32 +688,5 @@ video {
   text-decoration: none;
   color: black;
   font-weight: 600;
-}
-
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  font-weight: 500;
-  font-size: 12px;
-  padding: 2rem 0 0 0;
-  width: auto;
-}
-
-nav a {
-  height: 1rem;
-  padding: 0 0.2rem;
-  margin: 0 0.3rem;
-  color: #901c1c;
-  font-size: 12px;
-  border-radius: 11px;
-  text-decoration: none;
-  border: 0.5px solid #c4c4c4;
 }
 /*# sourceMappingURL=style.css.map */

@@ -8,20 +8,31 @@
   }
   
 .main {
-h2 {
-  color: $color-artists-name;
-  font-weight: 400;
-  font-size: 36px;
-  margin: 20px 0 0 0;
-  max-width: 200px;
 
-  @media all and (min-width: $breakpoint-desktop) {
-    font-size: 64px;
-    margin: 0;
-    max-width: 100%;
-  }
+  h2 {
+    color: $color-artists-name;
+    font-weight: 400;
+    font-size: 36px;
+    margin: 20px 0 0 0;
+    max-width: 200px;
+
+    @media all and (min-width: $breakpoint-desktop) {
+      font-size: 64px;
+      margin: 0;
+      max-width: 100%;
+    }
+
+  
 }  
 
+.main img {
+  
+  width: 14rem;
+  height: 14rem;
+  border-radius: 14rem;
+  object-fit: cover;
+  
+}
 
 .photoIdentite {
   height: 200px;
