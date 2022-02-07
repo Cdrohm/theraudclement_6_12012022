@@ -307,7 +307,6 @@ input {
 }
 
 .sort {
-  margin-left: 5rem;
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -330,6 +329,10 @@ input {
 
 #sort-list li:first-child {
   border-top: none;
+}
+
+#sort-text {
+  margin-right: 2rem;
 }
 
 .popularity-btn {
@@ -535,7 +538,7 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 4rem 5rem 3rem 5rem;
+  margin: 4rem 5rem 0 0;
   background-color: rgba(243, 244, 246, 0.5);
   padding: 2rem;
   border-radius: 5px;
@@ -554,7 +557,7 @@ h1 {
           flex-direction: column;
 }
 
-#nameProfil h1 {
+#nameProfil {
   font-size: 3rem;
   color: #DB8876;
   margin: 1rem 0;
@@ -647,9 +650,10 @@ video {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 2rem 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem -2rem;
 }
 
 .scrollProfile {

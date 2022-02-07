@@ -38,10 +38,10 @@ class MediaList {
       let reorderAreaOpen = document.getElementById("sort-list");
       reorderAreaClosed.addEventListener("click", function (evt) {
         reorderAreaClosed.style.display = "none";
-        reorderAreaOpen.style.display = "flex";
+        reorderAreaOpen.style.display = "inline-flex";
       });
       reorderAreaOpen.addEventListener("click", function (evt) {
-        reorderAreaClosed.style.display = "flex";
+        reorderAreaClosed.style.display = "inline-flex";
         reorderAreaOpen.style.display = "none";
       });
     }

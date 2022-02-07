@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 4rem 5rem 3rem 5rem;
+  margin: 4rem 5rem 0 0;
   background-color: rgba(243, 244, 246, 0.5);
   padding: 2rem;
   border-radius: 5px;
@@ -25,11 +25,12 @@
 display: flex;
 flex-direction: column;
 }
-#nameProfil h1 {
+#nameProfil {
 font-size: 3rem;
 color: $color-secondary;
 margin: 1rem 0;
 }
+
 #locationProfil h2 {
 color: $color-primary;
 font-size: 1.5rem;
@@ -95,8 +96,8 @@ background-color:$color-tertiary-font;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: space-around;
-margin: 2rem 1rem;
+justify-content: space-between;
+margin: 2rem -2rem;
 }
 
 //Scroll
