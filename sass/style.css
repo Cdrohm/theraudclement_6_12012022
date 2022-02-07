@@ -309,6 +309,8 @@ input {
 .sort {
   font-size: 1.5rem;
   font-weight: 700;
+  position: relative;
+  z-index: 10;
 }
 
 #selected-filter {
@@ -318,12 +320,12 @@ input {
 }
 
 #sort-list {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   text-align: left;
 }
 
 #sort-list li {
-  padding: 0.5rem 0;
+  padding: 0;
   border-top: 1px solid white;
 }
 
@@ -355,7 +357,7 @@ input {
 
 .popularity-btn-opened ul {
   margin: 0;
-  padding: 0;
+  padding: 0.5rem 0.5rem;
   list-style: none;
   width: 100%;
 }
@@ -475,7 +477,7 @@ h1 {
   margin-top: 100px;
 }
 
-.main h2 {
+.accueil .main h2 {
   color: #D3573C;
   font-weight: 400;
   font-size: 36px;
@@ -483,15 +485,7 @@ h1 {
   max-width: 200px;
 }
 
-@media all and (min-width: 992px) {
-  .main h2 {
-    font-size: 64px;
-    margin: 0;
-    max-width: 100%;
-  }
-}
-
-.main .main img {
+.accueil .main .main img {
   width: 14rem;
   height: 14rem;
   border-radius: 14rem;
@@ -499,24 +493,38 @@ h1 {
      object-fit: cover;
 }
 
-.main .photoIdentite {
+.accueil .main .main a {
+  margin-bottom: 4%;
+  text-decoration: none;
+  width: 32%;
+}
+
+.accueil .main .photoIdentite {
   height: 200px;
   width: 200px;
   border-radius: 100%;
+  text-align: center;
 }
 
-.main .lieu {
+.accueil .main .identite {
+  color: #DB8876;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.accueil .main .lieu {
   color: #901C1C;
   font-size: 13px;
   margin: 0 0 3px 0;
 }
 
-.main .tagline {
+.accueil .main .tagline {
   font-size: 10px;
   margin: 0 0 3px 0;
 }
 
-.main .prix {
+.accueil .main .prix {
   font-size: 9px;
   color: #757575;
   margin: 3px 0 50px 0;
@@ -578,10 +586,6 @@ h1 {
   margin-bottom: 0;
   margin-top: 0;
   padding: 0;
-}
-
-#headerFiche {
-  margin-left: 5rem;
 }
 
 #medias figure {
@@ -672,6 +676,7 @@ video {
   font-size: 1.5rem;
   padding: 1rem 1.5rem;
   position: fixed;
+  z-index: 10;
   bottom: 1%;
   right: 2%;
   background-color: #DB8876;

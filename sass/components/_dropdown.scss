@@ -2,6 +2,8 @@
 .sort {
   font-size: 1.5rem;
   font-weight: 700;
+  position: relative;
+  z-index: 10;
 }
 #selected-filter {
   list-style: none;
@@ -9,14 +11,14 @@
   width: 100%;
 }
 #sort-list {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   text-align: left;
 }
 #sort-list li {
-  //margin-left: -2.5rem;
-  padding: 0.5rem 0;
+  
+  padding: 0;
   border-top: 1px solid white;
-  //width: 200%;
+  
 }
 #sort-list li:first-child{
   border-top: none;
@@ -36,6 +38,7 @@
   border-radius: 5px;
   min-height: 2rem;
   
+  
 }
 .popularity-btn-opened {
   z-index: 9;
@@ -44,7 +47,7 @@
 }
 .popularity-btn-opened ul {
   margin: 0;
-  padding: 0;
+  padding: 0.5rem 0.5rem;
   list-style: none;
   width: 100%;
 }
