@@ -1,65 +1,51 @@
 //Index
 .accueil {
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 70px;
-    margin-top: 100px;
-  
-  
-.main {
-
-  h2 {
-    color: $color-artists-name;
-    font-weight: 400;
-    font-size: 36px;
-    margin: 20px 0 0 0;
-    max-width: 200px;
-
-  
-}  
-
-.main img {
-  
-  width: 14rem;
-  height: 14rem;
-  border-radius: 14rem;
-  object-fit: cover;
-  
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.main a {
-  margin-bottom: 4%;
-  text-decoration: none;
-  width: 32%;
+main a {
+margin-bottom: 4%;
+text-decoration: none;
+width: 32%;
 }
 .photoIdentite {
-  height: 200px;
-  width: 200px;
-  border-radius: 100%;
-  text-align: center;
+text-align: center;
 }
-
 .identite {
-  color: $color-secondary;
-  font-size: 36px;
-  font-weight: 400;
-  text-align: center;
+color: #d3573c;
+font-size: 36px;
+font-weight: 400;
+text-align: center;
+margin: 0;
+}
+.lieu,.tagline,.prix,.tags {
+font-size: 0.8em;
+text-align: center;
 }
 .lieu {
-  color: $color-primary;
-  font-size: 13px;
-  margin: 0 0 3px 0;
-}  
+color: #901c1c;
+font-size: 13px;
+font-weight: 500;
+margin-bottom: 0;
+}
 .tagline {
-  font-size: 10px;
-  margin: 0 0 3px 0;
-}  
-
+color: black;
+font-size: 0.8rem;
+font-weight: 400;
+margin: 5px;
+}
 .prix {
-  font-size: 9px;
-  color: #757575;
-  margin: 3px 0 50px 0;
+color: #757575;
+font-size: 0.7rem;
+font-weight: 400;
+margin: 0;
 }
-}
+main img {
+width: 14rem;
+height: 14rem;
+object-fit: cover;
+border-radius: 14rem;
 }
