@@ -6,7 +6,7 @@
 #slider {
     background-color:white;
     position: fixed;
-    z-index: 9;
+    z-index: 20;
     top: 0;
     right: 0;
     bottom: 0;
@@ -27,10 +27,10 @@ font-size: 2rem;
 font-weight: 600;
 }
 .arrow img,#close-slider img {
-width: 4rem;
+width: 2rem;
 }
 #next {
-margin-left: -3.5rem;
+margin-left: -1.6rem;
 margin-bottom: 4rem;
 }
 #previous {
