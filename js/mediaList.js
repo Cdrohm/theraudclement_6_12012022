@@ -39,6 +39,7 @@ class MediaList {
       reorderAreaClosed.addEventListener("click", function (evt) {
         reorderAreaClosed.style.display = "none";
         reorderAreaOpen.style.display = "inline-flex";
+        reorderAreaOpen.style.justifyContent = "start";
       });
       reorderAreaOpen.addEventListener("click", function (evt) {
         reorderAreaClosed.style.display = "inline-flex";
