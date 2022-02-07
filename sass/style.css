@@ -433,28 +433,47 @@ h1 {
 
 .accueil {
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 70px;
+  margin-top: 100px;
 }
 
-.lieu {
+.main h2 {
+  color: #D3573C;
+  font-weight: 400;
+  font-size: 36px;
+  margin: 20px 0 0 0;
+  max-width: 200px;
+}
+
+@media all and (min-width: 992px) {
+  .main h2 {
+    font-size: 64px;
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+.main .photoIdentite {
+  height: 200px;
+  width: 200px;
+}
+
+.main .lieu {
   color: #901C1C;
   font-size: 13px;
   margin: 0 0 3px 0;
 }
 
-.tagline {
+.main .tagline {
   font-size: 10px;
   margin: 0 0 3px 0;
 }
 
-.prix {
+.main .prix {
   font-size: 9px;
   color: #757575;
   margin: 3px 0 50px 0;
@@ -483,6 +502,9 @@ h1 {
   background-color: rgba(243, 244, 246, 0.5);
   padding: 2rem;
   border-radius: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .textProfil {

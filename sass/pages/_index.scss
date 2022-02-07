@@ -1,10 +1,31 @@
 //Index
 .accueil {
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px;
+    margin-top: 100px;
   }
+.main {
+h2 {
+  color: $color-artists-name;
+  font-weight: 400;
+  font-size: 36px;
+  margin: 20px 0 0 0;
+  max-width: 200px;
+
+  @media all and (min-width: $breakpoint-desktop) {
+    font-size: 64px;
+    margin: 0;
+    max-width: 100%;
+  }
+}  
+
+
+.photoIdentite {
+  height: 200px;
+  width: 200px;
+}
 
 .lieu {
   color: $color-primary;
@@ -20,4 +41,5 @@
   font-size: 9px;
   color: #757575;
   margin: 3px 0 50px 0;
+}
 }
