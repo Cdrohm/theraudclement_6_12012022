@@ -325,12 +325,21 @@ input {
 }
 
 #sort-list li {
-  padding: 0;
   border-top: 1px solid white;
 }
 
 #sort-list li:first-child {
   border-top: none;
+  padding: 0 0 10px 0;
+}
+
+#sort-list li:nth-child(2) {
+  margin-top: 7px;
+  padding: 10px 0;
+}
+
+#sort-list li:nth-child(3) {
+  padding: 10px 0 0 0;
 }
 
 #sort-text {
