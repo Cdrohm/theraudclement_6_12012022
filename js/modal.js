@@ -57,6 +57,8 @@ function validFirstName(e) {
     if(firstName.validity.valueMissing) {
         e.preventDefault();
         errorFirstName.textContent = "Veuillez renseigner votre prénom.";
+        errorMessage.style.color = "red";
+        firstName.style.border = "solid red 2px";
         firstName.classList.replace("text-control", "error-input");
         return false;
 
@@ -68,6 +70,7 @@ function validFirstName(e) {
 
     } else {
         errorFirstName.textContent = " ";
+        firstName.style.border = "solid green 2px";
         firstName.classList.replace("error-input", "text-control");
         return true;
     }
@@ -82,6 +85,8 @@ function validLastName(e) {
     if(lastName.validity.valueMissing) {
         e.preventDefault();
         errorLastName.textContent = "Veuillez renseigner votre nom.";
+        errorMessage.style.color = "red";
+        lastName.style.border = "solid red 2px";
         lastName.classList.replace("text-control", "error-input");
         return false;
 
@@ -93,6 +98,7 @@ function validLastName(e) {
 
     } else {
         errorLastName.textContent = " ";
+        lastName.style.border = "solid green 2px";
         lastName.classList.replace("error-input", "text-control");
         return true;
     }
@@ -107,6 +113,8 @@ function validEmail(e) {
     if(mail.validity.valueMissing) {
         e.preventDefault();
         errorMail.textContent = "Veuillez renseigner votre adresse email.";
+        errorMessage.style.color = "red";
+        mail.style.border = "solid red 2px";
         mail.classList.replace("text-control", "error-input");
         return false;
 
@@ -118,6 +126,7 @@ function validEmail(e) {
 
     } else {
         errorMail.textContent = " ";
+        mail.style.border = "solid green 2px";
         mail.classList.replace("error-input", "text-control");
         return true;
     }
@@ -132,6 +141,8 @@ function validMessage(e) {
     if(message.value.valueMissing) {
         e.preventDefault();
         errorMessage.textContent = "Veuillez rédiger votre message.";
+        errorMessage.style.color = "red";
+        message.style.border = "solid red 2px";
         message.classList.replace("text-control", "error-input");
         return false;
 
@@ -142,6 +153,7 @@ function validMessage(e) {
 
     } else {
         errorMessage.textContent = " ";
+        message.style.border = "solid green 2px";
         message.classList.replace("error-input", "text-control");
         return true;
     }
