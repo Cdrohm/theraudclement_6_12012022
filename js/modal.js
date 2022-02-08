@@ -191,6 +191,22 @@ function sendForm () {
     }
 }
 
+function sendForm() {
+    //déclarer une variable
+    let isFormValidate = [];
+
+    isFormValidate.push(validFirstName(firstName));
+    isFormValidate.push(validLastName(lastName));
+    isFormValidate.push(validEmail(mail));
+    isFormValidate.push(validMessage(message));
+    
+
+    if (!isFormValidate.includes(false)) {
+        form.style.display = "none";
+        confirmationValidation.style.display = "flex";
+    }
+}
+
 //Console log with informations
 validationBtn.addEventListener("click", function() {
     console.log("Prénom: " + firstName.value);
