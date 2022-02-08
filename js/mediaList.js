@@ -131,6 +131,9 @@ class MediaList {
       }
     }
 
+    
+
+
     //Total count
     getAllLikesPhotographer() {
       let total = 0;
@@ -139,5 +142,17 @@ class MediaList {
       });
       this.totalLikes = total;
       document.querySelector("#scrollLikes").textContent = total;
+    }
+  }
+
+  //One click by heart
+  let hasClicked = false;
+
+  function onClick() {
+
+    if(!hasClicked) {
+      likes +=1;
+      document.getElementById("scrollLikes").innerHTML = likes;
+      hasClicked = true;
     }
   }

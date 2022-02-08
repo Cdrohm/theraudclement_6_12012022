@@ -179,8 +179,21 @@ function validateForm (e) {
         validationBtn.classList.add("btn-submit_on");
         validationBtn.classList.remove("btn-submit_off");
     }
+
+    
 }
 
+/*let button = document.querySelector("btn-submit");
+button.disabled = true;
+isFormValid.addEventListener("change", stateHandle);
+function stateHandle() {
+    if (function (validateForm (e)).value = false {
+        button.disabled = true;
+    
+    } else {
+        button.disabled = false;
+    }
+}*/
 /**
  * send form with btn modif
  */
@@ -191,7 +204,8 @@ function sendForm () {
     }
 }
 
-function sendForm() {
+/*
+function validateForm() {
     //déclarer une variable
     let isFormValidate = [];
 
@@ -205,10 +219,11 @@ function sendForm() {
         form.style.display = "none";
         confirmationValidation.style.display = "flex";
     }
-}
+}*/
 
 //Console log with informations
 validationBtn.addEventListener("click", function() {
+    
     console.log("Prénom: " + firstName.value);
     console.log("Nom: " + lastName.value);
     console.log("Adresse email: " + mail.value);
