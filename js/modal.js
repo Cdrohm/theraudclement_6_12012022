@@ -172,28 +172,20 @@ function validateForm (e) {
     let isFormValid = firstNameValid && lastNameValid && mailValid && messageValid;
 
     if (isFormValid) {
-        validationBtn.classList.remove("btn-submit_off");
-        validationBtn.classList.add("btn-submint_on");
+        /*validationBtn.classList.remove("btn-submit_off");
+        validationBtn.classList.add("btn-submint_on");*/
+        validationBtn.disabled = false;
 
     } else {
-        validationBtn.classList.add("btn-submit_on");
-        validationBtn.classList.remove("btn-submit_off");
+        /*validationBtn.classList.add("btn-submit_on");
+        validationBtn.classList.remove("btn-submit_off");*/
+        validationBtn.disabled = true;
     }
 
     
 }
 
-/*let button = document.querySelector("btn-submit");
-button.disabled = true;
-isFormValid.addEventListener("change", stateHandle);
-function stateHandle() {
-    if (function (validateForm (e)).value = false {
-        button.disabled = true;
-    
-    } else {
-        button.disabled = false;
-    }
-}*/
+
 /**
  * send form with btn modif
  */
@@ -203,23 +195,6 @@ function sendForm () {
         launchBtn.style.display = "block";
     }
 }
-
-/*
-function validateForm() {
-    //déclarer une variable
-    let isFormValidate = [];
-
-    isFormValidate.push(validFirstName(firstName));
-    isFormValidate.push(validLastName(lastName));
-    isFormValidate.push(validEmail(mail));
-    isFormValidate.push(validMessage(message));
-    
-
-    if (!isFormValidate.includes(false)) {
-        form.style.display = "none";
-        confirmationValidation.style.display = "flex";
-    }
-}*/
 
 //Console log with informations
 validationBtn.addEventListener("click", function() {

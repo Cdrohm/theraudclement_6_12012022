@@ -147,9 +147,9 @@ class MediaList {
 
   //One click by heart
   let hasClicked = false;
-
+  console.log("coucou");
   function onClick() {
-
+    
     if(!hasClicked) {
       likes +=1;
       document.getElementById("scrollLikes").innerHTML = likes;
