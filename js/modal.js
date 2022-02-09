@@ -206,7 +206,7 @@ function sendForm () {
     }
 }
 
-//Console log with informations
+//Console log with informations | if form valid => btn click send console.log
 validationBtn.addEventListener("click", function(e) {
   if (validateForm(e)) {
     console.log("Prénom: " + firstName.value);
