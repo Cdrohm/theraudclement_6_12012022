@@ -190,7 +190,8 @@ function validateForm (e) {
  * send form with btn modif
  */
 function sendForm () {
-    if (validationBtn.classList.contains("btn-submit_on")) {
+    //if (validationBtn.classList.contains("btn-submit_on")) 
+    if (validationBtn.disabled = false) {
         modalBg.style.display = "none";
         launchBtn.style.display = "block";
     }
