@@ -180,14 +180,14 @@ function validateForm (e) {
         
         validationBtn.classList.remove("btn-submit_off");
         validationBtn.classList.add("btn-submint_on");
-
+        
         return true;
 
     } else {
         
         validationBtn.classList.add("btn-submit_on");
         validationBtn.classList.remove("btn-submit_off");
-       
+        
         return false;
     }
 
