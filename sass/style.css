@@ -48,13 +48,13 @@ html {
   padding: 1rem 2rem;
   font-size: 1.4rem;
   font-weight: 600;
+  border: none;
   cursor: pointer;
 }
 
 #btn-envoi:hover, #btn-envoi:focus {
   background: #901C1C;
   color: black;
-  border: solid 1.5px #901C1C;
 }
 
 .btn-submit_off {

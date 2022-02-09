@@ -27,13 +27,13 @@
   padding: 1rem 2rem;
   font-size: 1.4rem;
   font-weight: 600;
-  //width: 6.5rem;
+  border: none;
   cursor: pointer;
   }
   #btn-envoi:hover,#btn-envoi:focus {
   background: $color-primary;
   color: black;
-  border: solid 1.5px $color-primary;
+  //border: solid 1.5px $color-primary;
   }
   .btn-submit_off {
   background: lightgrey;

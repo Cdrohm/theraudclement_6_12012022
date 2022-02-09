@@ -3,6 +3,7 @@ let modalBg = document.querySelector(".bground");
 let validationBtn = document.querySelector("#btn-envoi");
 let launchBtn = document.querySelector("#contactButton");
 let closeBtn = document.querySelector("#close");
+let form = document.querySelector("#form");
 
 //FORM var
 let firstName = document.querySelector("#first");
@@ -55,7 +56,7 @@ function closeModal () {
  */
 function validFirstName(e) {
     if(firstName.validity.valueMissing) {
-        e.preventDefault();
+       // e.preventDefault();
         errorFirstName.textContent = "Veuillez renseigner votre prénom.";
         errorMessage.style.color = "red";
         firstName.style.border = "solid red 2px";
@@ -63,7 +64,7 @@ function validFirstName(e) {
         return false;
 
     } else if (firstName.value.length < 2) {
-        e.preventDefault();
+       // e.preventDefault();
         errorFirstName.textContent = "Le prénom doit comporter au moins 2 caractères minimum.";
         firstName.classList.replace("text-control", "error-input");
         return false;
@@ -159,27 +160,31 @@ function validMessage(e) {
     }
 }
 
-/**
- * 
- * @param {*} e valid Form if conditions true
- */
+
 function validateForm (e) {
-    let firstNameValid = validFirstName();
-    let lastNameValid = validLastName();
-    let mailValid = validEmail();
-    let messageValid = validMessage();
+    
+
+    let firstNameValid = validFirstName(e);
+    let lastNameValid = validLastName(e);
+    let mailValid = validEmail(e);
+    let messageValid = validMessage(e);
 
     let isFormValid = firstNameValid && lastNameValid && mailValid && messageValid;
+    
 
     if (isFormValid) {
-        /*validationBtn.classList.remove("btn-submit_off");
-        validationBtn.classList.add("btn-submint_on");*/
-        validationBtn.disabled = false;
+        
+        validationBtn.classList.remove("btn-submit_off");
+        validationBtn.classList.add("btn-submint_on");
+
+        return true;
 
     } else {
-        /*validationBtn.classList.add("btn-submit_on");
-        validationBtn.classList.remove("btn-submit_off");*/
-        validationBtn.disabled = true;
+        
+        validationBtn.classList.add("btn-submit_on");
+        validationBtn.classList.remove("btn-submit_off");
+       
+        return false;
     }
 
     
@@ -190,18 +195,20 @@ function validateForm (e) {
  * send form with btn modif
  */
 function sendForm () {
-    //if (validationBtn.classList.contains("btn-submit_on")) 
-    if (validationBtn.disabled = false) {
+    if (validationBtn.classList.contains("btn-submit_on")) {
+    
         modalBg.style.display = "none";
         launchBtn.style.display = "block";
     }
 }
 
 //Console log with informations
-validationBtn.addEventListener("click", function() {
-    
+validationBtn.addEventListener("click", function(e) {
+  if (validateForm(e)) {
     console.log("Prénom: " + firstName.value);
     console.log("Nom: " + lastName.value);
     console.log("Adresse email: " + mail.value);
     console.log("Message: " + message.value);
+  }
+  e.preventDefault();
 })
