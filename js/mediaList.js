@@ -1,10 +1,13 @@
 //MediaList (all medias)
+
 class MediaList {
     constructor() {
       this.all = [];
       this.activeTags = [];
       this.order = "";
       this.totalLikes = 0;
+      this.hasClicked = [];
+
     }
 
     add(media) {
@@ -109,12 +112,22 @@ class MediaList {
         heart.addEventListener("click", (e) => {
           let id = e.target.getAttribute("data-id");
           let index = this.all.findIndex((media) => media.id == id);
-          let likes = this.all[index].likes + 1;
-          this.all[index].likes = likes;
+          
+
+          if(!this.hasClicked[id]) {
+            
+            let likes = this.all[index].likes + 1;
+            this.all[index].likes = likes;
+            document.getElementById("scrollLikes").innerHTML = likes;
+            //[id] = sur chaque img de la data
+            this.hasClicked[id] = true;
+            
           selected.parentNode.children[0].innerHTML = likes;
           heart.setAttribute("style", "color:#901c1c");
           this.totalLikes++;
           document.getElementById("scrollLikes").innerHTML = this.totalLikes;
+        }
+
         });
         heart.addEventListener("keyup", (e) => {
           if (e.keyCode == 13) {
@@ -146,10 +159,9 @@ class MediaList {
   }
 
   //One click by heart
-  let hasClicked = false;
   function onClick() {
     
-    if(!hasClicked) {
+    if(!this.hasClicked) {
       likes +=1;
       document.getElementById("scrollLikes").innerHTML = likes;
       hasClicked = true;
