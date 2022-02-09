@@ -462,7 +462,7 @@ nav a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: auto 1rem auto 5rem;
+  margin: auto 6rem auto 7rem;
   padding-bottom: 5rem;
 }
 
@@ -475,21 +475,17 @@ h1 {
 }
 
 .accueil {
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 70px;
+  margin-top: 100px;
 }
 
 main a {
   margin-bottom: 4%;
   text-decoration: none;
-  width: 32%;
 }
 
 .photoIdentite {
@@ -502,6 +498,7 @@ main a {
   font-weight: 400;
   text-align: center;
   margin: 0;
+  white-space: nowrap;
 }
 
 .lieu, .tagline, .prix, .tags {
@@ -521,6 +518,7 @@ main a {
   font-size: 0.8rem;
   font-weight: 400;
   margin: 5px;
+  white-space: nowrap;
 }
 
 .prix {
