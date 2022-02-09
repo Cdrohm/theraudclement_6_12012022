@@ -160,7 +160,11 @@ function validMessage(e) {
     }
 }
 
-
+/**
+ * 
+ * @param {*} e if all inputs valid
+ * @returns btn on valid form
+ */
 function validateForm (e) {
     
 
