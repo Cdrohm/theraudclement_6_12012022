@@ -661,7 +661,7 @@ figcaption i {
 #medias img:focus,
 #medias video:hover,
 #medias video:focus {
-  border: solid 4px #525252;
+  border: solid 4px #901C1C;
 }
 
 video {
