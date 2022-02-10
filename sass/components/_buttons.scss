@@ -12,29 +12,34 @@
   background-color: $color-primary;
   border-radius: 5px;
 }
-.contactButton:hover,.contactButton:focus {
+
+.contactButton:hover,
+.contactButton:focus {
   background-color: $color-secondary;
   color: black;
 }
 
 //Button form
 .btn-submit {
-background: $color-primary;
-color: #fff;
-display: block;
-margin: 2rem 0;
-border-radius: 7px;
-padding: 1rem 2rem;
-font-size: 1.4rem;
-font-weight: 600;
-border: none;
-cursor: pointer;
+  background: $color-primary;
+  color: #fff;
+  display: block;
+  margin: 2rem 0;
+  border-radius: 7px;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
 }
-#btn-envoi:hover,#btn-envoi:focus {
-background: $color-primary;
-color: black;
+
+#btn-envoi:hover,
+#btn-envoi:focus {
+  background: $color-primary;
+  color: black;
 }
+
 .btn-submit_off {
-background: lightgrey;
-cursor: not-allowed;
+  background: lightgrey;
+  cursor: not-allowed;
 }

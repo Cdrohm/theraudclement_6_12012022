@@ -2,32 +2,38 @@
 .sort {
   font-size: 1.5rem;
   font-weight: 700;
-  //position: relative;
   z-index: 10;
 }
+
 #selected-filter {
   list-style: none;
   display: inline-block;
   width: 100%;
 }
+
 #sort-list {
   padding: 0.5rem 0;
   text-align: left;
 }
+
 #sort-list li {
-  border-top: 1px solid white; 
+  border-top: 1px solid white;
 }
-#sort-list li:first-child{
+
+#sort-list li:first-child {
   border-top: none;
   padding: 0 0 10px 0;
 }
-#sort-list li:nth-child(2){
-margin-top: 7px;
-padding: 10px 0;
+
+#sort-list li:nth-child(2) {
+  margin-top: 7px;
+  padding: 10px 0;
 }
-#sort-list li:nth-child(3){
+
+#sort-list li:nth-child(3) {
   padding: 10px 0 0 0;
 }
+
 #sort-text {
   margin-right: 2rem;
 }
@@ -42,48 +48,59 @@ padding: 10px 0;
   border-style: none;
   border-radius: 5px;
   min-height: 2rem;
-  
-  
+
+
 }
+
 .popularity-btn-opened {
   z-index: 9;
   text-align: left;
   display: none;
 }
+
 .popularity-btn-opened ul {
   margin: 0;
   padding: 0.5rem 0.5rem;
   list-style: none;
   width: 100%;
 }
-.sort-by-date,.sort-by-title {
+
+.sort-by-date,
+.sort-by-title {
   border-top: solid 1px white;
 }
+
 #text-choice {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
+
 #popularity-btn {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
+
 .fa-chevron-down {
   color: white;
 }
+
 .fa-chevron-up {
- 
+
   color: white;
 }
+
 .sort-list_closed nav {
   padding: 0;
 }
+
 .sort-list_closed:hover,
 .sort-list_closed:focus {
   background-color: $color-secondary;
   color: black;
 }
+
 .sort-by button {
   background-color: $color-primary;
   color: white;
@@ -91,7 +108,9 @@ padding: 10px 0;
   font-weight: 600;
   border: none;
 }
-.sort-by button:hover,.sort-by button:focus {
+
+.sort-by button:hover,
+.sort-by button:focus {
   background-color: $color-secondary;
   color: black;
 }
@@ -105,6 +124,7 @@ nav {
   padding: 2rem 0 0 0;
   width: auto;
 }
+
 nav a {
   height: 1rem;
   padding: 0 0.2rem;

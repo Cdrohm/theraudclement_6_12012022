@@ -34,7 +34,8 @@ html {
   border-radius: 5px;
 }
 
-.contactButton:hover, .contactButton:focus {
+.contactButton:hover,
+.contactButton:focus {
   background-color: #DB8876;
   color: black;
 }
@@ -52,7 +53,8 @@ html {
   cursor: pointer;
 }
 
-#btn-envoi:hover, #btn-envoi:focus {
+#btn-envoi:hover,
+#btn-envoi:focus {
   background: #901C1C;
   color: black;
 }
@@ -62,7 +64,8 @@ html {
   cursor: not-allowed;
 }
 
-input, textarea {
+input,
+textarea {
   cursor: auto;
 }
 
@@ -104,7 +107,8 @@ input, textarea {
   text-decoration: none;
 }
 
-#form-title, #form-title-name {
+#form-title,
+#form-title-name {
   font-size: 4rem;
   font-weight: 400;
   margin-left: 0rem;
@@ -170,7 +174,8 @@ input {
   top: 15px;
 }
 
-#close:hover, #close:focus {
+#close:hover,
+#close:focus {
   background-color: #901C1C;
 }
 
@@ -178,7 +183,8 @@ input {
   width: 40px;
 }
 
-.slider-content img, .slider-content video {
+.slider-content img,
+.slider-content video {
   cursor: default;
 }
 
@@ -216,7 +222,8 @@ input {
   font-weight: 600;
 }
 
-.arrow img, #close-slider img {
+.arrow img,
+#close-slider img {
   width: 2rem;
 }
 
@@ -368,7 +375,8 @@ input {
   width: 100%;
 }
 
-.sort-by-date, .sort-by-title {
+.sort-by-date,
+.sort-by-title {
   border-top: solid 1px white;
 }
 
@@ -418,7 +426,8 @@ input {
   border: none;
 }
 
-.sort-by button:hover, .sort-by button:focus {
+.sort-by button:hover,
+.sort-by button:focus {
   background-color: #DB8876;
   color: black;
 }
@@ -501,7 +510,10 @@ main a {
   white-space: nowrap;
 }
 
-.lieu, .tagline, .prix, .tags {
+.lieu,
+.tagline,
+.prix,
+.tags {
   font-size: 0.8em;
   text-align: center;
 }
@@ -693,7 +705,8 @@ video {
   margin-left: 2rem;
 }
 
-#scrollPrice:hover, #scrollPrice:focus {
+#scrollPrice:hover,
+#scrollPrice:focus {
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-box-shadow: 0 0 3px 2px #F2F2F2;
