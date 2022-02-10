@@ -119,7 +119,7 @@ class MediaList {
             let likes = this.all[index].likes + 1;
             this.all[index].likes = likes;
             document.getElementById("scrollLikes").innerHTML = likes;
-            //[id] = sur chaque img de la data
+            //[id] = in every img | just one click possible
             this.hasClicked[id] = true;
             
           selected.parentNode.children[0].innerHTML = likes;
@@ -158,12 +158,3 @@ class MediaList {
     }
   }
 
-  //One click by heart
-  function onClick() {
-    
-    if(!this.hasClicked) {
-      likes +=1;
-      document.getElementById("scrollLikes").innerHTML = likes;
-      hasClicked = true;
-    }
-  }
