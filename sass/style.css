@@ -92,7 +92,7 @@ textarea {
 
 .form {
   position: absolute;
-  z-index: 1;
+  z-index: 100;
   overflow: auto;
   top: 5%;
   width: 50%;
@@ -314,6 +314,7 @@ input {
 .sort {
   font-size: 1.5rem;
   font-weight: 700;
+  position: absolute;
   z-index: 10;
 }
 
@@ -683,7 +684,9 @@ video {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 2rem -2rem;
+  margin: 4rem -2rem;
+  position: absolute;
+  z-index: -10;
 }
 
 .scrollProfile {
