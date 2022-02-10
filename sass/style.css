@@ -687,6 +687,7 @@ video {
   margin: 4rem -2rem;
   position: absolute;
   z-index: -10;
+  width: 75%;
 }
 
 .scrollProfile {
