@@ -19,7 +19,7 @@ let errorMessage = document.querySelector("#missmessage");
 
 //Regex email
 let mailRegex =
-  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 //Event launch
 launchBtn.addEventListener("click", launchModal);
@@ -44,7 +44,7 @@ function launchModal() {
     launchBtn.style.display = "none";
 }
 
-function closeModal () {
+function closeModal() {
     modalBg.style.display = "none";
     launchBtn.style.display = "block";
 }
@@ -55,8 +55,8 @@ function closeModal () {
  * @returns error / 2 carac mini or valid
  */
 function validFirstName(e) {
-    if(firstName.validity.valueMissing) {
-       // e.preventDefault();
+    if (firstName.validity.valueMissing) {
+        // e.preventDefault();
         errorFirstName.textContent = "Veuillez renseigner votre prénom.";
         errorMessage.style.color = "red";
         firstName.style.border = "solid red 2px";
@@ -64,7 +64,7 @@ function validFirstName(e) {
         return false;
 
     } else if (firstName.value.length < 2) {
-       // e.preventDefault();
+        // e.preventDefault();
         errorFirstName.textContent = "Le prénom doit comporter au moins 2 caractères minimum.";
         firstName.classList.replace("text-control", "error-input");
         return false;
@@ -83,7 +83,7 @@ function validFirstName(e) {
  * @returns error / 2 carac mini or valid
  */
 function validLastName(e) {
-    if(lastName.validity.valueMissing) {
+    if (lastName.validity.valueMissing) {
         e.preventDefault();
         errorLastName.textContent = "Veuillez renseigner votre nom.";
         errorMessage.style.color = "red";
@@ -111,7 +111,7 @@ function validLastName(e) {
  * @returns error / cf regex carac or valid
  */
 function validEmail(e) {
-    if(mail.validity.valueMissing) {
+    if (mail.validity.valueMissing) {
         e.preventDefault();
         errorMail.textContent = "Veuillez renseigner votre adresse email.";
         errorMessage.style.color = "red";
@@ -139,7 +139,7 @@ function validEmail(e) {
  * @returns error / too short or valid
  */
 function validMessage(e) {
-    if(message.value.valueMissing) {
+    if (message.value.valueMissing) {
         e.preventDefault();
         errorMessage.textContent = "Veuillez rédiger votre message.";
         errorMessage.style.color = "red";
@@ -165,8 +165,8 @@ function validMessage(e) {
  * @param {*} e if all inputs valid
  * @returns btn on valid form
  */
-function validateForm (e) {
-    
+function validateForm(e) {
+
 
     let firstNameValid = validFirstName(e);
     let lastNameValid = validLastName(e);
@@ -174,33 +174,33 @@ function validateForm (e) {
     let messageValid = validMessage(e);
 
     let isFormValid = firstNameValid && lastNameValid && mailValid && messageValid;
-    
+
 
     if (isFormValid) {
-        
+
         validationBtn.classList.remove("btn-submit_off");
         validationBtn.classList.add("btn-submint_on");
-        
+
         return true;
 
     } else {
-        
+
         validationBtn.classList.add("btn-submit_on");
         validationBtn.classList.remove("btn-submit_off");
-        
+
         return false;
     }
 
-    
+
 }
 
 
 /**
  * send form with btn modif
  */
-function sendForm () {
+function sendForm() {
     if (validationBtn.classList.contains("btn-submit_on")) {
-    
+
         modalBg.style.display = "none";
         launchBtn.style.display = "block";
     }
@@ -208,11 +208,11 @@ function sendForm () {
 
 //Console log with informations | if form valid => btn click send console.log
 validationBtn.addEventListener("click", function(e) {
-  if (validateForm(e)) {
-    console.log("Prénom: " + firstName.value);
-    console.log("Nom: " + lastName.value);
-    console.log("Adresse email: " + mail.value);
-    console.log("Message: " + message.value);
-  }
-  e.preventDefault();
+    if (validateForm(e)) {
+        console.log("Prénom: " + firstName.value);
+        console.log("Nom: " + lastName.value);
+        console.log("Adresse email: " + mail.value);
+        console.log("Message: " + message.value);
+    }
+    e.preventDefault();
 })
