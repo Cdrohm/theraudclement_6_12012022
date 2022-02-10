@@ -10,15 +10,16 @@ textarea {
 
 .bground {
     background-color: rgba(255, 255, 255, 0.9);
-    position: absolute;
-    z-index: 9;
-    top: -10%;
+    position: fixed;
+    z-index: 50;
     right: 0;
     bottom: 0;
     left: 0;
     display: none;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .form {
@@ -26,11 +27,11 @@ textarea {
     z-index: 100;
     overflow: auto;
     top: 5%;
-    width: 50%;
+    width: 40%;
     max-width: 1000px;
     background-color: $color-secondary;
     padding: 2rem;
-    margin-left: 22%;
+    margin-left: 25%;
     border-radius: 5px;
 }
 
@@ -112,4 +113,14 @@ input {
 
 #close img {
     width: 40px;
+}
+
+.confirm-modal {
+    display: flex;
+    justify-content: center;
+}
+
+#confirm-msg {
+    text-align: center;
+    font-size: 35px;
 }

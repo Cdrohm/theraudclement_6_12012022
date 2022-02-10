@@ -4,7 +4,7 @@ let validationBtn = document.querySelector("#btn-envoi");
 let launchBtn = document.querySelector("#contactButton");
 let closeBtn = document.querySelector("#close");
 let form = document.querySelector("#form");
-let confirmationCloseBtn = document.querySelector("#btn-closed");
+const confirmationCloseBtn = document.querySelector("#btn-closed");
 
 //FORM var
 let firstName = document.querySelector("#first");
@@ -208,7 +208,7 @@ function sendForm() {
 }
 
 //Close form after message ok
-document.querySelector("#btn-closed").addEventListener("click", closeModal);
+document.querySelector("#btn-ferm").addEventListener("click", closeModal);
 
 //Console log with informations | if form valid => btn click send console.log
 validationBtn.addEventListener("click", function(e) {
