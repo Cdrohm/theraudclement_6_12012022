@@ -5,6 +5,7 @@ let launchBtn = document.querySelector("#contactButton");
 let closeBtn = document.querySelector("#close");
 let form = document.querySelector("#form");
 const confirmationCloseBtn = document.querySelector("#btn-closed");
+const confirmValidation = document.querySelector("#confirm-modal");
 
 //FORM var
 let firstName = document.querySelector("#first");
@@ -85,7 +86,7 @@ function validFirstName(e) {
  */
 function validLastName(e) {
     if (lastName.validity.valueMissing) {
-        e.preventDefault();
+       // e.preventDefault();
         errorLastName.textContent = "Veuillez renseigner votre nom.";
         errorMessage.style.color = "red";
         lastName.style.border = "solid red 2px";
@@ -93,7 +94,7 @@ function validLastName(e) {
         return false;
 
     } else if (lastName.value.length < 2) {
-        e.preventDefault();
+       // e.preventDefault();
         errorLastName.textContent = "Le nom doit comporter au moins 2 caractères minimum."
         lastName.classList.replace("text-control", "error-input");
         return false
@@ -113,7 +114,7 @@ function validLastName(e) {
  */
 function validEmail(e) {
     if (mail.validity.valueMissing) {
-        e.preventDefault();
+       // e.preventDefault();
         errorMail.textContent = "Veuillez renseigner votre adresse email.";
         errorMessage.style.color = "red";
         mail.style.border = "solid red 2px";
@@ -121,7 +122,7 @@ function validEmail(e) {
         return false;
 
     } else if (!mail.value.match(mailRegex)) {
-        e.preventDefault();
+       // e.preventDefault();
         errorMail.textContent = "Veuillez renseigner une adresse mail valide.";
         mail.classList.replace("text-control", "error-input");
         return false;
@@ -141,7 +142,7 @@ function validEmail(e) {
  */
 function validMessage(e) {
     if (message.value.valueMissing) {
-        e.preventDefault();
+      //  e.preventDefault();
         errorMessage.textContent = "Veuillez rédiger votre message.";
         errorMessage.style.color = "red";
         message.style.border = "solid red 2px";
@@ -166,7 +167,7 @@ function validMessage(e) {
  * @param {*} e if all inputs valid
  * @returns btn on valid form
  */
-function validateForm(e) {
+/*function validateForm(e) {
 
 
     let firstNameValid = validFirstName(e);
@@ -176,7 +177,7 @@ function validateForm(e) {
 
     let isFormValid = firstNameValid && lastNameValid && mailValid && messageValid;
 
-
+    
     if (isFormValid) {
 
         validationBtn.classList.remove("btn-submit_off");
@@ -193,19 +194,35 @@ function validateForm(e) {
     }
 
 
-}
+}*/
 
+//Validation form 
+function validateForm(e) {
+    //déclarer une variable
+    let isFormValidate = [];
+
+    isFormValidate.push(validFirstName(firstName));
+    isFormValidate.push(validLastName(lastName));
+    isFormValidate.push(validEmail(mail));
+    isFormValidate.push(validMessage(message));
+
+    if (!isFormValidate.includes(false)) {
+        form.style.display = "none";
+        confirmationValidation.style.display = "flex";
+    }
+}
 
 /**
  * send form with btn modif
  */
+/*
 function sendForm() {
     if (validationBtn.classList.contains("btn-submit_on")) {
 
         modalBg.style.display = "none";
         launchBtn.style.display = "block";
     }
-}
+}*/
 
 //Close form after message ok
 document.querySelector("#btn-ferm").addEventListener("click", closeModal);
