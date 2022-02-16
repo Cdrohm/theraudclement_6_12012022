@@ -4,6 +4,8 @@ let validationBtn = document.querySelector("#btn-envoi");
 let launchBtn = document.querySelector("#contactButton");
 let closeBtn = document.querySelector("#close");
 let form = document.querySelector("#form");
+let divForm = document.querySelector(".form");
+
 let confirmForm = document.querySelector("#confirm-modal");
 const confirmationCloseBtn = document.querySelector("#btn-closed");
 const confirmValidation = document.querySelector("#confirm-modal");
@@ -168,7 +170,7 @@ function validMessage(e) {
  * @param {*} e if all inputs valid
  * @returns btn on valid form
  */
-/*function validateForm(e) {
+function validateForm(e) {
 
 
     let firstNameValid = validFirstName(e);
@@ -195,10 +197,10 @@ function validMessage(e) {
     }
 
 
-}*/
+}
 
 //Validation form 
-function validateForm(e) {
+/*function validateForm(e) {
     //déclarer une variable
     let isFormValidate = [];
 
@@ -209,10 +211,10 @@ function validateForm(e) {
 
     if (!isFormValidate.includes(false)) {
         form.style.display = "none";
-        confirmationValidation.style.display = "flex";
-        confirmForm.style.display = "block";
+       // confirmationValidation.style.display = "flex";
+        confirmForm.style.display = "flex";
     }
-}
+}*/
 
 /**
  * send form with btn modif
@@ -236,6 +238,11 @@ validationBtn.addEventListener("click", function(e) {
         console.log("Nom: " + lastName.value);
         console.log("Adresse email: " + mail.value);
         console.log("Message: " + message.value);
+
+       divForm.style.display = "none";
+
+       // confirmationValidation.style.display = "flex";
+        confirmForm.style.display = "flex";
     }
     e.preventDefault();
 })

@@ -17,6 +17,7 @@ fetch("./data/FishEyeData.json")
         let factory = new MediaFactory();
         let medias = getMedias(json.media);
         let profil = json.photographers.filter((photographe) => photographe.id == query("id"))[0];
+        console.log(profil);
 
         let photographer = new Photographer(profil);
 

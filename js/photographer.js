@@ -1,6 +1,7 @@
 //Photograph Data
 class Photographer {
   constructor(data) {
+      //console.log(data);
       this.name = data.name;
       this.city = data.city;
       this.country = data.country;
