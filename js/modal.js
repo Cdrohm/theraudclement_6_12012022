@@ -4,6 +4,7 @@ let validationBtn = document.querySelector("#btn-envoi");
 let launchBtn = document.querySelector("#contactButton");
 let closeBtn = document.querySelector("#close");
 let form = document.querySelector("#form");
+let confirmForm = document.querySelector("#confirm-modal");
 const confirmationCloseBtn = document.querySelector("#btn-closed");
 const confirmValidation = document.querySelector("#confirm-modal");
 
@@ -209,6 +210,7 @@ function validateForm(e) {
     if (!isFormValidate.includes(false)) {
         form.style.display = "none";
         confirmationValidation.style.display = "flex";
+        confirmForm.style.display = "block";
     }
 }
 
