@@ -8,7 +8,7 @@ let divForm = document.querySelector(".form");
 
 let confirmForm = document.querySelector("#confirm-modal");
 const confirmationCloseBtn = document.querySelector("#btn-closed");
-const confirmValidation = document.querySelector("#confirm-modal");
+//const confirmValidation = document.querySelector("#confirm-modal");
 
 //FORM var
 let firstName = document.querySelector("#first");
