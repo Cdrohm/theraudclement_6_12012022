@@ -203,7 +203,7 @@ validationBtn.addEventListener("click", function (e) {
             divForm.style.display="none";
             document.forms["form"].reset();
         }
-
+       
         e.preventDefault();
     }
 
