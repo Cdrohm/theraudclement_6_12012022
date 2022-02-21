@@ -9,12 +9,8 @@ html {
 
 * {
   font-family: DM Sans;
-  /*cursor: default;*/
 }
 
-/*.linkPhotographer,.identite,img,video,button,.sort li,#close-slider,.arrow,.scroll {
-    cursor: pointer;
-  }*/
 .container {
   max-width: 1440px;
   margin: auto;

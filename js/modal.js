@@ -199,35 +199,6 @@ function validateForm(e) {
 
 }
 
-//Validation form 
-/*function validateForm(e) {
-    //déclarer une variable
-    let isFormValidate = [];
-
-    isFormValidate.push(validFirstName(firstName));
-    isFormValidate.push(validLastName(lastName));
-    isFormValidate.push(validEmail(mail));
-    isFormValidate.push(validMessage(message));
-
-    if (!isFormValidate.includes(false)) {
-        form.style.display = "none";
-       // confirmationValidation.style.display = "flex";
-        confirmForm.style.display = "flex";
-    }
-}*/
-
-/**
- * send form with btn modif
- */
-/*
-function sendForm() {
-    if (validationBtn.classList.contains("btn-submit_on")) {
-
-        modalBg.style.display = "none";
-        launchBtn.style.display = "block";
-    }
-}*/
-
 //Close form after message ok
 document.querySelector("#btn-ferm").addEventListener("click", closeModal);
 
