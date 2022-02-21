@@ -201,9 +201,17 @@ validationBtn.addEventListener("click", function (e) {
             console.log("Message: "+ message.value);
 
             divForm.style.display="none";
-            document.forms["form"].reset();
+           // document.forms["form"].reset();
         }
-       
+        form = document.getElementById('id_form');
+        /*$(document).ready(function () {
+            resetForms();
+        });
+        
+        function resetForms() {
+            document.forms['form'].reset();
+        }
+        //document.querySelector("#form").reset();*/
         e.preventDefault();
     }
 
