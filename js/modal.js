@@ -46,7 +46,6 @@ message.addEventListener("keyup", validMessage);
 //F modal
 function launchModal() {
     modalBg.style.display = "block";
-    launchBtn.style.display = "none";
 }
 
 function closeModal() {
@@ -61,7 +60,6 @@ function closeModal() {
  */
 function validFirstName(e) {
     if (firstName.validity.valueMissing) {
-        // e.preventDefault();
         errorFirstName.textContent = "Veuillez renseigner votre prénom.";
         errorMessage.style.color = "red";
         firstName.style.border = "solid red 2px";
@@ -69,7 +67,6 @@ function validFirstName(e) {
         return false;
 
     } else if (firstName.value.length < 2) {
-        // e.preventDefault();
         errorFirstName.textContent = "Le prénom doit comporter au moins 2 caractères minimum.";
         firstName.classList.replace("text-control", "error-input");
         return false;
@@ -213,7 +210,7 @@ validationBtn.addEventListener("click", function(e) {
        divForm.style.display = "none";
 
        // confirmationValidation.style.display = "flex";
-        confirmForm.style.display = "flex";
+        //confirmForm.style.display = "flex";
     }
     e.preventDefault();
 })

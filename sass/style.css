@@ -9,6 +9,8 @@ html {
 
 * {
   font-family: DM Sans;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
@@ -631,8 +633,8 @@ main img {
 }
 
 #medias figure {
-  width: 21rem;
-  height: 21rem;
+  width: 26rem;
+  height: 26rem;
   margin: 2rem;
   padding: 0;
   background-color: black;
@@ -673,8 +675,8 @@ figcaption i {
 }
 
 #medias img {
-  width: 21rem;
-  height: 21rem;
+  width: 26rem;
+  height: 26rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
@@ -688,8 +690,8 @@ figcaption i {
 }
 
 video {
-  width: 21rem;
-  height: 21rem;
+  width: 26rem;
+  height: 26rem;
   padding: 0;
   background-color: #525252;
 }
@@ -707,8 +709,7 @@ video {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 4rem -2rem;
-  position: absolute;
+  margin-top: 9rem;
   z-index: -10;
   width: 97%;
 }
