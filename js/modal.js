@@ -54,7 +54,7 @@ function launchModal() {
 
 function closeModal() {
     modalBg.style.display="none";
-   // launchBtn.style.display="block";
+    launchBtn.style.display="block";
 }
 
 /**
@@ -183,7 +183,6 @@ function validateForm(e) {
     let isFormValid=firstNameValid && lastNameValid && mailValid && messageValid;
 
     if (isFormValid) {
-
         return true;
     }
 
