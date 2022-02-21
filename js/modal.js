@@ -196,9 +196,6 @@ function validateForm(e) {
 
 }
 
-//Close form after message ok
-document.querySelector("#btn-ferm").addEventListener("click", closeModal);
-
 //Console log with informations | if form valid => btn click send console.log
 validationBtn.addEventListener("click", function(e) {
     if (validateForm(e)) {
@@ -208,9 +205,9 @@ validationBtn.addEventListener("click", function(e) {
         console.log("Message: " + message.value);
 
        divForm.style.display = "none";
-
-       // confirmationValidation.style.display = "flex";
-        //confirmForm.style.display = "flex";
+       document.forms['form'].reset();
+       
     }
     e.preventDefault();
+    
 })
