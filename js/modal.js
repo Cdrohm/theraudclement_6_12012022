@@ -54,7 +54,7 @@ function launchModal() {
 
 function closeModal() {
     modalBg.style.display="none";
-    launchBtn.style.display="block";
+   // launchBtn.style.display="block";
 }
 
 /**
