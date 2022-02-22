@@ -6,10 +6,6 @@ let closeBtn=document.querySelector("#close");
 let form=document.querySelector("#form");
 let divForm=document.querySelector(".form");
 
-let confirmForm=document.querySelector(".confirm-modal");
-const confirmationCloseBtn=document.querySelector("#btn-closed");
-//const confirmValidation = document.querySelector("#confirm-modal");
-
 //FORM var
 let firstName=document.querySelector("#first");
 let lastName=document.querySelector("#last");
@@ -30,6 +26,7 @@ let mailRegex =
 //Event launch
 launchBtn.addEventListener("click", launchModal);
 
+
 //Event close
 closeBtn.addEventListener("click", closeModal);
 
@@ -38,6 +35,7 @@ window.addEventListener("keydown", (event)=> {
             closeModal();
         }
     }
+    
 
 );
 
@@ -50,6 +48,11 @@ message.addEventListener("keyup", validMessage);
 //F modal
 function launchModal() {
     modalBg.style.display="block";
+    firstName.style.border="none";
+    lastName.style.border="none";
+    mail.style.border="none";
+    message.style.border="none";
+
 }
 
 function closeModal() {
@@ -157,6 +160,7 @@ function validMessage(e) {
 
     else if (message.value.length < 6) {
         errorMessage.textContent="Votre message est trop court.";
+        message.style.border="solid red 2px";
         message.classList.replace("text-control", "error-input");
         return false;
     }
@@ -200,30 +204,14 @@ validationBtn.addEventListener("click", function (e) {
             console.log("Adresse email: "+ mail.value);
             console.log("Message: "+ message.value);
 
-            divForm.style.display="none";
+            modalBg.style.display="none";
             launchBtn.style.display="block";
-           // document.forms["form"].reset();
+            document.querySelector("#form").reset();
         }
-        console.log(launchBtn);
+
         launchBtn.style.display="block";
-        form = document.getElementById('#form');
-        /*$(document).ready(function () {
-            resetForms();
-        });
-        
-        function resetForms() {
-            document.forms['form'].reset();
-        }
-        //document.querySelector("#form").reset();*/
         e.preventDefault();
     }
 
 );
 
-/**
- * REfresh page and reset form if form is valid
- */
-/*function refreshPage(){
-    if (validateForm())
-    window.location.reload();
-}*/
