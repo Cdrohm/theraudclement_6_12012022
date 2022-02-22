@@ -204,6 +204,7 @@ validationBtn.addEventListener("click", function (e) {
             launchBtn.style.display="block";
            // document.forms["form"].reset();
         }
+        console.log(launchBtn);
         launchBtn.style.display="block";
         form = document.getElementById('#form');
         /*$(document).ready(function () {
