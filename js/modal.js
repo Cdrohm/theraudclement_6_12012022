@@ -189,6 +189,7 @@ function validateForm(e) {
     else {
         return false;
     }
+    
 }
 
 //Console log with informations | if form valid => btn click send console.log
@@ -200,9 +201,11 @@ validationBtn.addEventListener("click", function (e) {
             console.log("Message: "+ message.value);
 
             divForm.style.display="none";
+            launchBtn.style.display="block";
            // document.forms["form"].reset();
         }
-        form = document.getElementById('id_form');
+        launchBtn.style.display="block";
+        form = document.getElementById('#form');
         /*$(document).ready(function () {
             resetForms();
         });
@@ -215,3 +218,11 @@ validationBtn.addEventListener("click", function (e) {
     }
 
 );
+
+/**
+ * REfresh page and reset form if form is valid
+ */
+/*function refreshPage(){
+    if (validateForm())
+    window.location.reload();
+}*/
